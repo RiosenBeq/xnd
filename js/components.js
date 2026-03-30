@@ -53,23 +53,27 @@ export function renderNavbar(activePage = 'home') {
 
   navContainer.innerHTML = `
     <!-- ═══ Desktop Top Nav ═══ -->
-    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 bg-[#0a0f1a]/70 backdrop-blur-2xl border border-white/[0.06] shadow-[0_20px_60px_rgba(0,0,0,0.6)] rounded-[2rem] transition-all duration-700 hover:bg-[#0a0f1a]/85 overflow-hidden group/nav nav-glow hidden md:block">
-      <!-- Gold accent line -->
-      <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-60 group-hover/nav:opacity-100 transition-opacity"></div>
+    <nav class="fixed top-5 md:top-8 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-7xl z-50 bg-[#060a12]/60 backdrop-blur-[32px] border border-white/[0.04] shadow-[0_30px_80px_rgba(0,0,0,0.7)] rounded-[2.5rem] transition-all duration-700 hover:bg-[#060a12]/80 overflow-hidden group/nav hidden md:block group">
+      <!-- Ambient Inner Glow -->
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/[0.02] via-transparent to-primary/[0.02] pointer-events-none z-0"></div>
+      <!-- Gold Accent Lines -->
+      <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-40 group-hover/nav:opacity-80 transition-opacity duration-700"></div>
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover/nav:opacity-50 transition-opacity duration-1000"></div>
       
-      <div class="flex justify-between items-center px-6 md:px-10 py-3 relative z-10">
-        <a href="/index.html" class="mr-8 flex-shrink-0 group">
-          <img src="/header_logo.png" alt="XND Teknoloji Grubu" class="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_15px_rgba(201,168,76,0.2)] group-hover:scale-105 transition-transform duration-500" />
+      <div class="flex justify-between items-center px-8 md:px-12 py-3 md:py-4 relative z-10 font-plus-jakarta">
+        <a href="/index.html" class="mr-10 flex-shrink-0 relative group/logo">
+          <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover/logo:opacity-100 transition-opacity duration-700"></div>
+          <img src="/header_logo.png" alt="XND Teknoloji Grubu" class="h-9 md:h-11 w-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.05)] relative z-10 transition-transform duration-500" />
         </a>
-        <div class="hidden md:flex gap-8 items-center" id="navLinks">
+        <div class="hidden md:flex gap-10 items-center" id="navLinks">
           ${linksHTML}
-          <a data-i18n="nav.contact" class="font-plus-jakarta text-[10px] md:text-xs tracking-widest uppercase relative transition-all duration-300 ${contactIsActive ? 'text-primary font-black after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-primary after:rounded-full' : 'text-neutral-400 hover:text-white'}" href="/iletisim.html">${t['nav.contact']}</a>
+          <a data-i18n="nav.contact" class="text-[10px] md:text-xs tracking-widest uppercase relative transition-all duration-300 ${contactIsActive ? 'text-primary font-bold after:absolute after:-bottom-2.5 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-primary after:rounded-full after:shadow-[0_0_10px_rgba(201,168,76,0.6)]' : 'text-on-surface-variant hover:text-white font-medium'}" href="/iletisim.html">${t['nav.contact']}</a>
         </div>
-        <div class="flex items-center space-x-4 md:space-x-6">
-          <button id="langSwitcher" class="text-[10px] md:text-xs uppercase font-bold tracking-widest text-neutral-400 hover:text-primary transition-colors bg-white/5 hover:bg-primary/10 px-3 py-2 rounded-xl border border-white/5 hover:border-primary/20">
+        <div class="flex items-center space-x-5">
+          <button id="langSwitcher" class="text-[10px] uppercase font-bold tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors bg-white/5 hover:bg-primary/5 px-3 py-2 rounded-full border border-white/5 hover:border-primary/20 backdrop-blur-md">
             ${lang === 'tr' ? 'EN' : 'TR'}
           </button>
-          <a data-i18n="nav.cta" href="/iletisim.html" class="btn-premium px-6 py-3 text-[10px] tracking-widest">${t['nav.cta']}</a>
+          <a data-i18n="nav.cta" href="/iletisim.html" class="btn-premium px-7 py-3 text-[10px] tracking-widest shadow-[0_10px_30px_rgba(201,168,76,0.1)] hover:shadow-[0_15px_40px_rgba(201,168,76,0.2)] hover:-translate-y-0.5 rounded-full">${t['nav.cta']}</a>
         </div>
       </div>
     </nav>
