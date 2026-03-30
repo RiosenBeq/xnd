@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr">
+<head>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <title>Ana Sayfa — XND Teknoloji Grubu</title>
+  <meta name="description" content="XND Teknoloji Grubu — Kurumsal dijital dönüşüm, marka yönetimi, satış kanalları ve teknoloji çözümleri." />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30 relative">
+
+  <!-- Cinematic noise overlay -->
+  <div class="fixed inset-0 noise-bg"></div>
+
+  <div id="navbar"></div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — Premium Corporate Full-Screen
+       ═══════════════════════════════════════════════════════════════ -->
+  <main class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#040810]">
+    <!-- Background layers -->
+    <div class="absolute inset-0 z-0">
+      <!-- Tech grid -->
+      <div class="absolute inset-0 bg-[linear-gradient(rgba(201,168,76,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,168,76,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_80%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      
+      <!-- Central warm glow -->
+      <div class="absolute top-[15%] left-1/2 -translate-x-1/2 w-[80vw] md:w-[60vw] h-[50vw] md:h-[35vw] max-w-[900px] max-h-[700px] bg-gradient-to-b from-primary/15 via-primary/5 to-transparent blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
+      
+      <!-- Vertical gold accent line -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-[50vh] md:h-[60vh] bg-gradient-to-b from-primary/0 via-primary/30 to-transparent"></div>
+      
+      <!-- Bottom fade -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#040810] via-transparent to-transparent opacity-95"></div>
+      <div class="absolute inset-0 noise-bg opacity-20 mix-blend-overlay"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-30 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 w-full text-center pointer-events-none pt-24 md:pt-20">
+      <!-- Giant Title -->
+      <h1 class="text-[clamp(2.8rem,7vw,10rem)] font-extralight leading-[0.9] tracking-tighter mb-10 md:mb-16 opacity-0 animate-[slideUpFade_1.5s_cubic-bezier(0.16,1,0.3,1)_forwards] drop-shadow-2xl flex flex-col items-center">
+        <span data-i18n="home.hero.title_top" class="block font-black italic bg-gradient-to-r from-[#e8d08a] via-white to-primary text-transparent bg-clip-text whitespace-nowrap">teknolojiyle</span>
+        <span data-i18n="home.hero.title_bottom" class="block font-black text-white/90 drop-shadow-[0_0_60px_rgba(201,168,76,0.3)] whitespace-nowrap mt-1 md:mt-2 text-[clamp(1.6rem,4vw,5.5rem)]">geleceği inşa ediyoruz</span>
+      </h1>
+      
+      <!-- Subtitle -->
+      <p data-i18n="home.hero.desc" class="text-white/50 text-sm md:text-lg max-w-2xl mx-auto mb-10 md:mb-14 font-light leading-relaxed opacity-0 animate-[slideUpFade_1.5s_ease_0.3s_forwards]">
+        İşletmenizin uçtan uca dijital dönüşümü için stratejik vizyon ve ileri mühendislik, XND Teknoloji Grubu güvencesiyle.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-[slideUpFade_1.5s_ease_0.6s_forwards] pointer-events-auto">
+        <a href="/hizmetler.html" class="btn-premium px-8 md:px-10 py-4 md:py-5 text-[10px] md:text-xs tracking-widest">
+          <span data-i18n="home.hero.cta1">Çözümlerimiz</span>
+          <span class="material-symbols-outlined text-lg">arrow_outward</span>
+        </a>
+        <a href="/hakkimizda.html" class="btn-ghost px-8 md:px-10 py-4 md:py-5 text-[10px] md:text-xs tracking-widest">
+          <span data-i18n="home.hero.cta2">Hikayemiz</span>
+          <span class="material-symbols-outlined text-lg">east</span>
+        </a>
+      </div>
+      
+      <!-- Scroll Reminder -->
+      <div class="absolute bottom-[-8vh] md:bottom-[-10vh] left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-0 animate-[slideUpFade_1.5s_ease_1s_forwards]">
+        <span data-i18n="home.hero.scroll" class="text-[9px] font-bold tracking-[0.3em] uppercase text-white/40">KEŞFET</span>
+        <div class="w-px h-12 md:h-16 bg-gradient-to-b from-primary/40 to-transparent"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SERVICES — Asymmetric cards
+       ═══════════════════════════════════════════════════════════════ -->
+  <section id="hizmetler" class="py-24 md:py-40 lg:py-56 px-6 md:px-16 lg:px-24 relative overflow-hidden">
+    <!-- Background glow -->
+    <div class="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="mb-16 md:mb-24 lg:mb-32 reveal">
+        <span data-i18n="services.label" class="section-label block mb-5">Uzmanlık Alanlarımız</span>
+        <h2 class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.9]">
+          <span data-i18n="services.title_top">Bütünleşik</span><br/>
+          <span data-i18n="services.title_bottom" class="text-gradient">Teknoloji Çözümleri</span>
+        </h2>
+      </div>
+      
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+        <!-- Card 1 -->
+        <div class="reveal glass-card rounded-2xl md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 group hover:border-primary/30 transition-all duration-700 relative overflow-hidden hover:bg-white/[0.03]">
+          <div class="service-card-line"></div>
+          <span class="material-symbols-outlined text-4xl md:text-6xl text-primary/30 group-hover:text-primary mb-8 md:mb-12 block transition-colors duration-500 group-hover:scale-110 origin-left">hub</span>
+          <h3 data-i18n="services.1.title" class="text-2xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-primary transition-all duration-500">Satış Kanalları</h3>
+          <p data-i18n="services.1.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg max-w-md font-light">Yeni nesil pazar yeri entegrasyonları ve veri odaklı satış stratejileri ile gelirinizi sürdürülebilir şekilde artırın.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="reveal glass-card rounded-2xl md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 group hover:border-primary/30 transition-all duration-700 relative overflow-hidden hover:bg-white/[0.03] lg:mt-16 xl:mt-24">
+          <div class="service-card-line"></div>
+          <span class="material-symbols-outlined text-4xl md:text-6xl text-primary/30 group-hover:text-primary mb-8 md:mb-12 block transition-colors duration-500 group-hover:scale-110 origin-left">star</span>
+          <h3 data-i18n="services.2.title" class="text-2xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-primary transition-all duration-500">Marka Yönetimi</h3>
+          <p data-i18n="services.2.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg max-w-md font-light">Kurumsal kimlik tasarımından dijital itibar yönetimine kadar markanızı sektörün öncüsü konumuna taşıyoruz.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="reveal glass-card rounded-2xl md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 group hover:border-primary/30 transition-all duration-700 relative overflow-hidden hover:bg-white/[0.03] lg:-mt-16 xl:-mt-24">
+          <div class="service-card-line"></div>
+          <span class="material-symbols-outlined text-4xl md:text-6xl text-primary/30 group-hover:text-primary mb-8 md:mb-12 block transition-colors duration-500 group-hover:scale-110 origin-left">ads_click</span>
+          <h3 data-i18n="services.3.title" class="text-2xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-primary transition-all duration-500">Dijital Pazarlama</h3>
+          <p data-i18n="services.3.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg max-w-md font-light">Veri analitiği ve yapay zeka destekli performans pazarlaması ile hedefinize en verimli şekilde ulaşın.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="reveal glass-card rounded-2xl md:rounded-[2.5rem] p-8 md:p-12 lg:p-16 group hover:border-primary/30 transition-all duration-700 relative overflow-hidden hover:bg-white/[0.03]">
+          <div class="service-card-line"></div>
+          <span class="material-symbols-outlined text-4xl md:text-6xl text-primary/30 group-hover:text-primary mb-8 md:mb-12 block transition-colors duration-500 group-hover:scale-110 origin-left">terminal</span>
+          <h3 data-i18n="services.4.title" class="text-2xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-primary transition-all duration-500">Proje Geliştirme</h3>
+          <p data-i18n="services.4.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg max-w-md font-light">Konsept aşamasından lansmanına kadar tüm yazılım ve iş geliştirme süreçlerini profesyonelce yönetiyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       STATISTICS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="py-24 md:py-40 lg:py-56 px-6 md:px-16 lg:px-24 relative">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 md:gap-16 lg:gap-20 reveal">
+        <div class="space-y-3 md:space-y-4">
+          <div class="text-5xl md:text-7xl lg:text-8xl font-black stat-number leading-none">6+</div>
+          <div data-i18n="stats.years" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-on-surface-variant font-bold">Yıllık Deneyim</div>
+        </div>
+        <div class="space-y-3 md:space-y-4">
+          <div class="text-5xl md:text-7xl lg:text-8xl font-black stat-number leading-none">5</div>
+          <div data-i18n="stats.areas" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-on-surface-variant font-bold">Uzmanlık Alanı</div>
+        </div>
+        <div class="space-y-3 md:space-y-4">
+          <div class="text-5xl md:text-7xl lg:text-8xl font-black stat-number leading-none">23+</div>
+          <div data-i18n="stats.projects" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-on-surface-variant font-bold">Tamamlanmış Proje</div>
+        </div>
+        <div class="space-y-3 md:space-y-4">
+          <div class="text-5xl md:text-7xl lg:text-8xl font-black stat-number leading-none">7</div>
+          <div data-i18n="stats.sectors" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-on-surface-variant font-bold">Sektörde Aktif Hizmet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BRANDS — Deep Dark with Gold accents
+       ═══════════════════════════════════════════════════════════════ -->
+  <section id="markalar" class="py-24 md:py-40 lg:py-56 px-6 md:px-16 lg:px-24 bg-[#030710] relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(201,168,76,0.03)_1px,transparent_1px)] bg-[size:2rem_2rem]"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] h-[200px] md:h-[300px] bg-primary/8 rounded-full blur-[150px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-16 md:mb-24 lg:mb-32 reveal">
+        <span class="section-label block mb-5">Ekosistem</span>
+        <h2 data-i18n="brands.title" class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black tracking-tighter text-white leading-[0.9]">
+          Alt Markalarımız
+        </h2>
+      </div>
+      
+      <!-- Brand Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:gap-12 items-center reveal relative z-20">
+        <a href="/marka-detay.html" class="group flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 md:hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(201,168,76,0.1)] backdrop-blur-2xl relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <img src="/logo_clicknow.png" alt="Click Now Digital" class="h-10 md:h-14 lg:h-20 w-auto object-contain brightness-0 invert opacity-50 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all duration-500 relative z-10" loading="lazy" />
+          <span class="text-white/30 text-[9px] md:text-[10px] tracking-[0.3em] uppercase font-bold group-hover:text-primary transition-colors relative z-10">Click Now</span>
+        </a>
+        <a href="/marka-detay.html" class="group flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 md:hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(201,168,76,0.1)] backdrop-blur-2xl relative overflow-hidden lg:mt-12">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <img src="/logo_onmuzik.png" alt="On Müzik" class="h-10 md:h-14 lg:h-20 w-auto object-contain brightness-0 invert opacity-50 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all duration-500 relative z-10" loading="lazy" />
+          <span class="text-white/30 text-[9px] md:text-[10px] tracking-[0.3em] uppercase font-bold group-hover:text-primary transition-colors relative z-10">On Müzik</span>
+        </a>
+        <a href="/marka-detay.html" class="group flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 md:hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(201,168,76,0.1)] backdrop-blur-2xl relative overflow-hidden lg:-mt-12">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <img src="/logo_tikla.png" alt="Tıkla Hemenal" class="h-10 md:h-14 lg:h-20 w-auto object-contain brightness-0 invert opacity-50 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all duration-500 relative z-10" loading="lazy" />
+          <span class="text-white/30 text-[9px] md:text-[10px] tracking-[0.3em] uppercase font-bold group-hover:text-primary transition-colors relative z-10">Tıkla Hemenal</span>
+        </a>
+        <a href="/marka-detay.html" class="group flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 md:hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(201,168,76,0.1)] backdrop-blur-2xl relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <img src="/logo_xndtek.png" alt="XND Teknoloji" class="h-10 md:h-14 lg:h-20 w-auto object-contain brightness-0 invert opacity-50 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] transition-all duration-500 relative z-10" loading="lazy" />
+          <span class="text-white/30 text-[9px] md:text-[10px] tracking-[0.3em] uppercase font-bold group-hover:text-primary transition-colors relative z-10">XND Teknoloji</span>
+        </a>
+      </div>
+      
+      <div class="text-center mt-16 md:mt-24 reveal">
+        <a href="/marka-detay.html" class="btn-premium px-8 md:px-10 py-4 md:py-5 text-[10px] md:text-sm tracking-widest">
+          <span><span data-i18n="brands.view_all">Tüm Ekosistemi Keşfet</span></span>
+          <span class="material-symbols-outlined text-xl">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TESTIMONIALS — Infinite marquee
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="py-24 md:py-40 lg:py-56 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto mb-12 md:mb-20 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-end">
+        <div>
+          <span data-i18n="testi.label" class="section-label block mb-5">Referanslar</span>
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-[0.9]">
+            <span data-i18n="testi.title_top">İş Ortaklarımızdan</span><br/>
+            <span data-i18n="testi.title_bottom" class="text-gradient">Değerlendirmeler</span>
+          </h2>
+        </div>
+        <p data-i18n="testi.desc" class="text-on-surface-variant text-base md:text-lg leading-relaxed lg:text-right">Vizyonumuzu paylaşan sektör liderlerinin deneyimleri.</p>
+      </div>
+    </div>
+
+    <!-- Marquee Container -->
+    <div class="relative -mx-6 md:-mx-16 lg:-mx-24">
+      <div class="absolute inset-y-0 left-0 w-16 md:w-24 bg-gradient-to-r from-surface to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute inset-y-0 right-0 w-16 md:w-24 bg-gradient-to-l from-surface to-transparent z-10 pointer-events-none"></div>
+      
+      <div class="flex gap-6 md:gap-8 w-max animate-scroll hover:[animation-play-state:paused] py-6 md:py-8">
+        <!-- Group 1 -->
+        <div class="flex gap-6 md:gap-8">
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">XND'nin sunduğu akıllı sistemler, operasyonel verimliliğimizi %40 oranında artırdı. Gerçek anlamda stratejik bir teknoloji partneri.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20">
+                <span class="material-symbols-outlined text-primary text-base md:text-lg">person</span>
+              </div>
+              <div>
+                <div class="font-bold text-sm md:text-base">DJ Murano</div>
+                <div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">Sanatçı & Prodüktör</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">Marka yönetimi konusundaki vizyoner yaklaşımları sayesinde pazar konumlandırmamızı çok daha güçlü bir noktaya taşıdık.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20">
+                <span class="material-symbols-outlined text-primary text-base md:text-lg">person</span>
+              </div>
+              <div>
+                <div class="font-bold text-sm md:text-base">Ayşe Erdem</div>
+                <div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">Limon Studio</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">Yazılım mimarisindeki titizlikleri ve destek süreçlerindeki çeviklikleri takdire şayan. Her zaman ulaşılabilirler.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20">
+                <span class="material-symbols-outlined text-primary text-base md:text-lg">person</span>
+              </div>
+              <div>
+                <div class="font-bold text-sm md:text-base">Efe Güney</div>
+                <div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">GRU Coffee — CEO</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured: NextGen Lab -->
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group border-primary/20 bg-primary/5">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="text-4xl md:text-6xl text-primary/20 font-serif leading-none">"</span>
+              <div class="h-4 w-[1px] bg-white/10"></div>
+              <span class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.3em] font-bold">Stratejik Partner</span>
+            </div>
+            <p class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors italic">"XND Technology Group ile gerçekleştirdiğimiz ekosistem tasarımı ve dijital dönüşüm süreci, grubun global vizyonunu premium bir noktaya taşıdı."</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-primary/30 overflow-hidden">
+                <img src="https://nextgenlab.com.tr/favicon.ico" class="w-6 h-6 object-contain" onerror="this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-primary text-base md:text-lg\'>design_services</span>'" />
+              </div>
+              <div>
+                <div class="font-bold text-sm md:text-base">NextGen Lab</div>
+                <a href="https://nextgenlab.com.tr" target="_blank" class="text-[9px] md:text-[10px] text-primary/60 hover:text-primary transition-colors underline-offset-4 hover:underline">nextgenlab.com.tr</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Group 2 (duplicate for infinite scroll) -->
+        <div class="flex gap-6 md:gap-8">
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p data-i18n="testi.1.quote" class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">XND'nin sunduğu akıllı sistemler, operasyonel verimliliğimizi %40 oranında artırdı. Gerçek anlamda stratejik bir teknoloji partneri.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20"><span class="material-symbols-outlined text-primary text-base md:text-lg">person</span></div>
+              <div><div class="font-bold text-sm md:text-base">DJ Murano</div><div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">Sanatçı & Prodüktör</div></div>
+            </div>
+          </div>
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p data-i18n="testi.2.quote" class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">Marka yönetimi konusundaki vizyoner yaklaşımları sayesinde pazar konumlandırmamızı çok daha güçlü bir noktaya taşıdık.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20"><span class="material-symbols-outlined text-primary text-base md:text-lg">person</span></div>
+              <div><div class="font-bold text-sm md:text-base">Ayşe Erdem</div><div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">Limon Studio</div></div>
+            </div>
+          </div>
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group">
+            <div class="text-4xl md:text-6xl text-primary/20 font-serif leading-none mb-4 md:mb-6">"</div>
+            <p data-i18n="testi.3.quote" class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors">Yazılım mimarisindeki titizlikleri ve destek süreçlerindeki çeviklikleri takdire şayan. Her zaman ulaşılabilirler.</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/15 flex items-center justify-center border border-primary/20"><span class="material-symbols-outlined text-primary text-base md:text-lg">person</span></div>
+              <div><div class="font-bold text-sm md:text-base">Efe Güney</div><div class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.2em] font-bold">GRU Coffee — CEO</div></div>
+            </div>
+          </div>
+
+          <!-- Featured: NextGen Lab (Duplicate) -->
+          <div class="w-[320px] md:w-[420px] lg:w-[480px] glass-card rounded-2xl md:rounded-[2rem] p-7 md:p-10 lg:p-12 group border-primary/20 bg-primary/5">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="text-4xl md:text-6xl text-primary/20 font-serif leading-none">"</span>
+              <div class="h-4 w-[1px] bg-white/10"></div>
+              <span class="text-[9px] md:text-[10px] text-primary uppercase tracking-[0.3em] font-bold">Stratejik Partner</span>
+            </div>
+            <p class="text-sm md:text-lg leading-relaxed mb-8 md:mb-10 text-on-surface-variant group-hover:text-on-surface transition-colors italic">"XND Technology Group ile gerçekleştirdiğimiz ekosistem tasarımı ve dijital dönüşüm süreci, grubun global vizyonunu premium bir noktaya taşıdı."</p>
+            <div class="flex items-center gap-3 md:gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-primary/30 overflow-hidden">
+                <img src="https://nextgenlab.com.tr/favicon.ico" class="w-6 h-6 object-contain" />
+              </div>
+              <div>
+                <div class="font-bold text-sm md:text-base">NextGen Lab</div>
+                <a href="https://nextgenlab.com.tr" target="_blank" class="text-[9px] md:text-[10px] text-primary/60 hover:text-primary transition-colors underline-offset-4 hover:underline">nextgenlab.com.tr</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       METHODOLOGY
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="py-24 md:py-40 lg:py-56 px-6 md:px-16 lg:px-24 relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="mb-16 md:mb-24 lg:mb-32 reveal">
+        <span class="section-label block mb-5">Metodoloji</span>
+        <h2 class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.9]">
+          Nasıl<br/>
+          <span class="text-gradient">Çalışıyoruz?</span>
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
+        <div class="reveal relative">
+          <div class="text-[6rem] md:text-[10rem] font-black text-white/[0.03] leading-none absolute -top-10 md:-top-16 -left-4 md:-left-6 pointer-events-none">01</div>
+          <div class="relative space-y-4 md:space-y-6 pt-4">
+            <h4 data-i18n="method.1.title" class="text-xl md:text-2xl lg:text-3xl font-black tracking-tight">Analiz & Strateji</h4>
+            <p data-i18n="method.1.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg">Sektör dinamiklerini ve iş hedeflerinizi derinlemesine analiz ederek özelleştirilmiş bir yol haritası oluşturuyoruz.</p>
+          </div>
+        </div>
+        <div class="reveal relative">
+          <div class="text-[6rem] md:text-[10rem] font-black text-white/[0.03] leading-none absolute -top-10 md:-top-16 -left-4 md:-left-6 pointer-events-none">02</div>
+          <div class="relative space-y-4 md:space-y-6 pt-4">
+            <h4 data-i18n="method.2.title" class="text-xl md:text-2xl lg:text-3xl font-black tracking-tight">Mimari & Kurulum</h4>
+            <p data-i18n="method.2.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg">Projeleri bütünleşik bir yapı altında kurgulayarak maksimum kontrol ve operasyonel verimlilik sağlıyoruz.</p>
+          </div>
+        </div>
+        <div class="reveal relative">
+          <div class="text-[6rem] md:text-[10rem] font-black text-white/[0.03] leading-none absolute -top-10 md:-top-16 -left-4 md:-left-6 pointer-events-none">03</div>
+          <div class="relative space-y-4 md:space-y-6 pt-4">
+            <h4 data-i18n="method.3.title" class="text-xl md:text-2xl lg:text-3xl font-black tracking-tight">Geliştirme & Optimizasyon</h4>
+            <p data-i18n="method.3.desc" class="text-on-surface-variant leading-relaxed text-sm md:text-lg">Her aşamada test edilebilir ve ölçeklenebilir teknolojik altyapılar geliştirerek sürekli iyileştirme uyguluyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       CTA SECTION
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="py-24 md:py-40 lg:py-64 px-6 md:px-16 lg:px-24 relative overflow-hidden mesh-gradient">
+    <div class="absolute inset-0 backdrop-blur-[80px] bg-surface/30"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(201,168,76,0.04)_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
+    
+    <div class="max-w-5xl mx-auto text-center relative z-20 reveal">
+      <div class="inline-flex items-center gap-3 px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-white/15 bg-white/5 backdrop-blur-2xl mb-10 md:mb-16 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+        <span class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-green-400 animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] shadow-[0_0_15px_#4ade80]"></span>
+        <span data-i18n="cta.badge" class="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-white">Yeni Projelere Açığız</span>
+      </div>
+      
+      <h2 class="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8 md:mb-12 drop-shadow-2xl">
+        <span data-i18n="cta.title_top">Vizyonunuzu</span><br/>
+        <span data-i18n="cta.title_bottom" class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#e8d08a] to-primary/80">Gerçeğe Dönüştürelim.</span>
+      </h2>
+      
+      <p data-i18n="cta.desc" class="text-base md:text-xl lg:text-3xl text-white/70 leading-relaxed max-w-4xl mx-auto mb-12 md:mb-20 font-light">
+        Dijital dönüşüm yolculuğunuzda güvenilir teknoloji ortağınız olmak için hazırız. Kurumsal altyapınızı XND vizyonuyla yeniden tasarlayalım.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-5 md:gap-6 justify-center items-center">
+        <a href="/iletisim.html" class="btn-premium px-10 md:px-14 py-5 md:py-7 tracking-[0.2em] text-sm md:text-lg shadow-[0_0_60px_rgba(201,168,76,0.3)]">
+          <span data-i18n="cta.btn">Proje Talebi Oluştur</span>
+          <span class="material-symbols-outlined text-xl md:text-2xl">arrow_outward</span>
+        </a>
+      </div>
+      
+      <p class="mt-10 md:mt-16 text-white/30 text-[10px] md:text-xs tracking-[0.3em] uppercase font-bold flex items-center justify-center gap-2 md:gap-3">
+        <span class="material-symbols-outlined text-xs md:text-sm">schedule</span> <span data-i18n="cta.guarantee">24 Saat İçinde Dönüş Garantisi</span>
+      </p>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script type="module">
+    import { renderNavbar, renderFooter, initScrollReveal, renderCookieConsent } from '/js/components.js';
+    import { initLanguage } from '/js/i18n.js';
+    renderNavbar('home');
+    renderFooter();
+    renderCookieConsent();
+    initScrollReveal();
+    initLanguage();
+
+    // Hero parallax
+    document.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const heroTitle = document.querySelector('h1');
+      if(heroTitle) {
+         heroTitle.style.transform = `translateY(${scrolled * 0.3}px)`;
+         heroTitle.style.opacity = Math.max(0, 1 - scrolled/600);
+      }
+    });
+  </script>
+</body>
+</html>
