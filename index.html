@@ -84,65 +84,55 @@
       
       <!-- Bottom fade -->
       <div class="absolute inset-0 bg-gradient-to-t from-[#040810] via-transparent to-transparent opacity-95"></div>
+      
+      <!-- Subtle Aetheric Core (Centered Background Effect) -->
+      <div class="absolute inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none opacity-[0.15] scale-125">
+        <div class="relative w-[100vw] h-[100vw] flex items-center justify-center">
+          <div class="absolute inset-0 bg-primary/20 blur-[150px] rounded-full scale-50"></div>
+          <img src="/aetheric_core.png" alt="" class="w-full h-auto animate-[float_10s_easeInOutSine_infinite] opacity-60" />
+          <div class="absolute inset-0 border border-primary/10 rounded-full animate-[ping_6s_linear_infinite]"></div>
+        </div>
+      </div>
+
       <div class="absolute inset-0 noise-bg opacity-20 mix-blend-overlay"></div>
     </div>
 
-    <!-- Hero Content (Aetheric Elite Asymmetric Layout) -->
-    <div class="relative z-30 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 w-full pt-44 md:pt-60 lg:pt-48 min-h-screen flex items-start lg:items-center">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full">
+    <!-- Hero Content (Centered Atmospheric Layout) -->
+    <div class="relative z-30 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 w-full pt-44 md:pt-60 lg:pt-48 min-h-screen flex flex-col items-center justify-center text-center">
+      
+      <!-- Vision Card (Centered) -->
+      <div class="reveal w-full max-w-4xl mx-auto">
+        <div class="relative inline-block mb-10 translate-y-4">
+          <span data-i18n="home.hero.title_top" class="text-xs md:text-sm font-black uppercase tracking-[0.8em] text-primary/60 block mb-2 select-none">teknolojiyle</span>
+          <div class="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+        </div>
+
+        <div class="glass-card p-10 md:p-16 lg:p-20 rounded-[3rem] border-white/[0.06] backdrop-blur-3xl relative overflow-hidden group mb-12 shadow-[0_40px_100px_rgba(0,0,0,0.4)]">
+          <div class="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none"></div>
+          
+          <h1 class="relative z-10 flex flex-col gap-4 mb-10">
+            <span data-i18n="home.hero.title_bottom" class="text-4xl md:text-6xl lg:text-7xl xl:text-[7.5rem] font-black text-white leading-[0.85] tracking-tighter drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">GELECEĞİ<br/>İNŞA<br/>EDİYORUZ</span>
+          </h1>
+
+          <p data-i18n="home.hero.desc" class="text-white/50 text-sm md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12 tracking-wide border-t border-white/5 pt-8">
+            İşletmenizin uçtan uca dijital dönüşümü için stratejik vizyon ve ileri mühendislik, XND Teknoloji Grubu güvencesiyle.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-6 justify-center items-center pointer-events-auto">
+            <a href="/hizmetler.html" class="btn-premium px-12 md:px-16 py-5 md:py-6 text-[11px] md:text-xs uppercase font-black">
+              <span data-i18n="home.hero.cta1">Çözümlerimiz</span>
+              <span class="material-symbols-outlined text-xl">arrow_outward</span>
+            </a>
+            <a href="/hakkimizda.html" class="btn-ghost px-12 md:px-16 py-5 md:py-6 text-[11px] md:text-xs uppercase font-black">
+              <span data-i18n="home.hero.cta2">Hikayemiz</span>
+            </a>
+          </div>
+        </div>
         
-        <!-- Left: Vision Card -->
-        <div class="text-left reveal">
-          <div class="relative inline-block mb-8">
-            <span data-i18n="home.hero.title_top" class="text-xs md:text-sm font-black uppercase tracking-[0.8em] text-primary/60 block mb-2">teknolojiyle</span>
-            <div class="h-px w-full bg-gradient-to-r from-primary/40 to-transparent"></div>
-          </div>
-
-          <div class="glass-card p-8 md:p-12 rounded-[2.5rem] border-white/[0.08] backdrop-blur-3xl relative overflow-hidden group mb-10">
-            <div class="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent pointer-events-none"></div>
-            
-            <h1 class="relative z-10 flex flex-col gap-2 mb-8">
-              <span data-i18n="home.hero.title_bottom" class="text-4xl md:text-6xl lg:text-7xl xl:text-[7.5rem] font-black text-white leading-[0.85] tracking-tighter drop-shadow-2xl">GELECEĞİ<br/>İNŞA<br/>EDİYORUZ</span>
-            </h1>
-
-            <p data-i18n="home.hero.desc" class="text-white/50 text-sm md:text-lg max-w-xl font-light leading-relaxed mb-10 tracking-wide border-l-2 border-primary/20 pl-6">
-              İşletmenizin uçtan uca dijital dönüşümü için stratejik vizyon ve ileri mühendislik, XND Teknoloji Grubu güvencesiyle.
-            </p>
-
-            <div class="flex flex-wrap gap-4 pointer-events-auto">
-              <a href="/hizmetler.html" class="btn-premium px-8 md:px-10 py-4 text-[10px] uppercase font-black">
-                <span data-i18n="home.hero.cta1">Çözümlerimiz</span>
-                <span class="material-symbols-outlined text-lg">arrow_outward</span>
-              </a>
-              <a href="/hakkimizda.html" class="btn-ghost px-8 md:px-10 py-4 text-[10px] uppercase font-black">
-                <span data-i18n="home.hero.cta2">Hikayemiz</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Minimal accent line -->
-          <div class="h-1 w-24 bg-primary/20 rounded-full"></div>
-        </div>
-
-        <!-- Right: Aetheric Core Visual -->
-        <div class="relative reveal hidden lg:block group">
-          <div class="absolute inset-0 bg-primary/10 blur-[120px] rounded-full group-hover:bg-primary/20 transition-all duration-[2s]"></div>
-          <div class="relative z-10 animate-[float_8s_easeInOutSine_infinite] hover:scale-105 transition-transform duration-1000">
-            <img src="/aetheric_core.png" alt="Aetheric Core" class="w-full h-auto drop-shadow-[0_0_100px_rgba(201,168,76,0.3)] select-none pointer-events-none" />
-            
-            <!-- Animated rings -->
-            <div class="absolute inset-0 border-2 border-primary/10 rounded-full animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
-            <div class="absolute -inset-10 border border-white/5 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none"></div>
-          </div>
-          
-          <!-- High-End Stats Overlay -->
-          <div class="absolute -bottom-10 -right-10 glass-card p-6 rounded-2xl border-white/10 backdrop-blur-xl animate-[slideUpFade_1.5s_ease_1s_forwards] opacity-0">
-            <div class="text-[10px] text-primary/60 font-black tracking-widest uppercase mb-1">Global Vision</div>
-            <div class="text-2xl font-black text-white tracking-tighter tabular-nums">2026.03</div>
-          </div>
-        </div>
-
+        <!-- Minimal decorative line -->
+        <div class="h-1 w-24 bg-primary/20 rounded-full mx-auto opacity-50"></div>
       </div>
+
     </div>
   </main>
 
