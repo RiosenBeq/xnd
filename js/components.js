@@ -29,10 +29,10 @@ export function renderNavbar(activePage = 'home') {
     const isActive = l.id === activePage;
     return `
       <a data-i18n="nav.${l.id}" 
-         class="font-plus-jakarta text-[10px] tracking-[0.25em] uppercase relative transition-all duration-500 py-2 group/link ${isActive ? 'text-primary font-bold' : 'text-white/50 hover:text-white'}" 
+         class="font-plus-jakarta text-[10px] tracking-[0.3em] uppercase relative transition-all duration-700 py-2 group/link ${isActive ? 'text-primary font-black scale-105' : 'text-white/40 hover:text-white'}" 
          href="${l.href}">
         ${t[`nav.${l.id}`] || l.label}
-        <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover/link:w-full ${isActive ? 'w-full opacity-100' : 'opacity-0'}"></span>
+        <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent transition-all duration-700 group-hover/link:w-full ${isActive ? 'w-full opacity-100' : 'opacity-0'}"></span>
       </a>`;
   }).join('');
 
@@ -59,7 +59,9 @@ export function renderNavbar(activePage = 'home') {
 
   navContainer.innerHTML = `
     <!-- ═══ Desktop Top Nav ═══ -->
-    <nav class="fixed top-6 md:top-10 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl z-50 bg-black/30 backdrop-blur-[40px] border border-white/[0.08] shadow-[0_40px_100px_rgba(0,0,0,0.8)] rounded-[3rem] transition-all duration-1000 hover:bg-black/50 overflow-hidden group hidden md:block">
+    <nav class="fixed top-6 md:top-10 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl z-50 bg-black/40 backdrop-blur-[50px] border border-white/[0.1] shadow-[0_40px_120px_rgba(0,0,0,0.9)] rounded-[3rem] transition-all duration-1000 hover:bg-black/60 overflow-hidden group hidden md:block">
+      <!-- Crystalline Shimmer Line -->
+      <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-[goldShimmer_4s_linear_infinite] bg-[length:200%_auto]"></div>
       <!-- Ambient Inner Glow Layers -->
       <div class="absolute inset-0 bg-gradient-to-r from-primary/[0.03] via-transparent to-primary/[0.03] pointer-events-none"></div>
       <div class="absolute -inset-px bg-gradient-to-b from-white/[0.05] to-transparent pointer-events-none rounded-[3rem]"></div>
@@ -74,9 +76,9 @@ export function renderNavbar(activePage = 'home') {
         <!-- Links -->
         <div class="hidden lg:flex gap-12 items-center justify-center flex-1 mx-12">
           ${linksHTML}
-          <a data-i18n="nav.contact" class="font-plus-jakarta text-[10px] tracking-[0.25em] uppercase relative transition-all duration-500 py-2 group/link ${contactIsActive ? 'text-primary font-bold' : 'text-white/50 hover:text-white font-medium'}" href="/iletisim.html">
+          <a data-i18n="nav.contact" class="font-plus-jakarta text-[10px] tracking-[0.3em] uppercase relative transition-all duration-700 py-2 group/link ${contactIsActive ? 'text-primary font-black scale-105' : 'text-white/40 hover:text-white font-medium'}" href="/iletisim.html">
             ${t['nav.contact']}
-            <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover/link:w-full ${contactIsActive ? 'w-full opacity-100' : 'opacity-0'}"></span>
+            <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent transition-all duration-700 group-hover/link:w-full ${contactIsActive ? 'w-full opacity-100' : 'opacity-0'}"></span>
           </a>
         </div>
 
