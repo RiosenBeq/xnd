@@ -87,31 +87,64 @@
       <div class="absolute inset-0 noise-bg opacity-20 mix-blend-overlay"></div>
     </div>
 
-    <!-- Hero Content -->
-    <div class="relative z-30 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 w-full text-center pointer-events-none pt-32 md:pt-48">
-      <!-- New Corporate Headline Layout -->
-      <div class="flex flex-col items-center gap-12 md:gap-16 mb-16 md:mb-20">
-        <h1 class="flex flex-col items-center gap-6 md:gap-10 opacity-0 animate-[slideUpFade_1.5s_cubic-bezier(0.16,1,0.3,1)_0.2s_forwards] drop-shadow-2xl">
-          <span data-i18n="home.hero.title_top" class="text-[clamp(1rem,4vw,3.5rem)] font-black uppercase tracking-[0.8em] text-primary/80 mb-4 select-none">teknolojiyle</span>
-          <span data-i18n="home.hero.title_bottom" class="text-[clamp(2.5rem,8.5vw,11rem)] font-black text-white leading-none tracking-[0.05em] md:tracking-[0.02em] whitespace-nowrap drop-shadow-[0_0_80px_rgba(201,168,76,0.15)]">GELECEĞİ İNŞA EDİYORUZ</span>
-        </h1>
-      </div>
-      
-      <!-- Subtitle -->
-      <p data-i18n="home.hero.desc" class="text-white/60 text-sm md:text-xl max-w-3xl mx-auto mb-10 md:mb-14 font-light leading-relaxed opacity-0 animate-[slideUpFade_1.5s_ease_0.3s_forwards] tracking-wide">
-        İşletmenizin uçtan uca dijital dönüşümü için stratejik vizyon ve ileri mühendislik, XND Teknoloji Grubu güvencesiyle.
-      </p>
+    <!-- Hero Content (Aetheric Elite Asymmetric Layout) -->
+    <div class="relative z-30 max-w-7xl mx-auto px-6 md:px-16 lg:px-24 w-full pt-32 md:pt-40 lg:pt-0 min-h-screen flex items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full">
+        
+        <!-- Left: Vision Card -->
+        <div class="text-left reveal">
+          <div class="relative inline-block mb-8">
+            <span data-i18n="home.hero.title_top" class="text-xs md:text-sm font-black uppercase tracking-[0.8em] text-primary/60 block mb-2">teknolojiyle</span>
+            <div class="h-px w-full bg-gradient-to-r from-primary/40 to-transparent"></div>
+          </div>
 
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-5 md:gap-6 justify-center items-center opacity-0 animate-[slideUpFade_1.5s_ease_0.6s_forwards] pointer-events-auto">
-        <a href="/hizmetler.html" class="btn-premium px-10 md:px-14 py-4 md:py-6 text-[10px] md:text-xs tracking-widest uppercase font-bold">
-          <span data-i18n="home.hero.cta1">Çözümlerimiz</span>
-          <span class="material-symbols-outlined text-lg md:text-xl">arrow_outward</span>
-        </a>
-        <a href="/hakkimizda.html" class="btn-ghost px-10 md:px-14 py-4 md:py-6 text-[10px] md:text-xs tracking-widest uppercase font-bold">
-          <span data-i18n="home.hero.cta2">Hikayemiz</span>
-          <span class="material-symbols-outlined text-lg md:text-xl">east</span>
-        </a>
+          <div class="glass-card p-8 md:p-12 rounded-[2.5rem] border-white/[0.08] backdrop-blur-3xl relative overflow-hidden group mb-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent pointer-events-none"></div>
+            
+            <h1 class="relative z-10 flex flex-col gap-2 mb-8">
+              <span class="text-white/20 text-4xl md:text-6xl font-black absolute -top-8 -left-4 select-none pointer-events-none opacity-40">XND</span>
+              <span data-i18n="home.hero.title_bottom" class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-[0.9] tracking-tighter drop-shadow-2xl">GELECEĞİ<br/>İNŞA<br/>EDİYORUZ</span>
+            </h1>
+
+            <p data-i18n="home.hero.desc" class="text-white/50 text-sm md:text-lg max-w-xl font-light leading-relaxed mb-10 tracking-wide border-l-2 border-primary/20 pl-6">
+              İşletmenizin uçtan uca dijital dönüşümü için stratejik vizyon ve ileri mühendislik, XND Teknoloji Grubu güvencesiyle.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pointer-events-auto">
+              <a href="/hizmetler.html" class="btn-premium px-8 md:px-10 py-4 text-[10px] uppercase font-black">
+                <span data-i18n="home.hero.cta1">Çözümlerimiz</span>
+                <span class="material-symbols-outlined text-lg">arrow_outward</span>
+              </a>
+              <a href="/hakkimizda.html" class="btn-ghost px-8 md:px-10 py-4 text-[10px] uppercase font-black">
+                <span data-i18n="home.hero.cta2">Hikayemiz</span>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Artistic Outline Text -->
+          <div class="opacity-10 pointer-events-none select-none">
+            <span class="text-[8rem] font-black text-transparent stroke-white/20 stroke-1 tracking-tighter leading-none block">INNOVATION</span>
+          </div>
+        </div>
+
+        <!-- Right: Aetheric Core Visual -->
+        <div class="relative reveal hidden lg:block group">
+          <div class="absolute inset-0 bg-primary/10 blur-[120px] rounded-full group-hover:bg-primary/20 transition-all duration-[2s]"></div>
+          <div class="relative z-10 animate-[float_8s_easeInOutSine_infinite] hover:scale-105 transition-transform duration-1000">
+            <img src="/aetheric_core.png" alt="Aetheric Core" class="w-full h-auto drop-shadow-[0_0_100px_rgba(201,168,76,0.3)] select-none pointer-events-none" />
+            
+            <!-- Animated rings -->
+            <div class="absolute inset-0 border-2 border-primary/10 rounded-full animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+            <div class="absolute -inset-10 border border-white/5 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none"></div>
+          </div>
+          
+          <!-- High-End Stats Overlay -->
+          <div class="absolute -bottom-10 -right-10 glass-card p-6 rounded-2xl border-white/10 backdrop-blur-xl animate-[slideUpFade_1.5s_ease_1s_forwards] opacity-0">
+            <div class="text-[10px] text-primary/60 font-black tracking-widest uppercase mb-1">Global Vision</div>
+            <div class="text-2xl font-black text-white tracking-tighter tabular-nums">2026.03</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
