@@ -58,19 +58,20 @@ export function renderNavbar(activePage = 'home') {
   }).join('');
 
   navContainer.innerHTML = `
-    <!-- ═══ Desktop Top Nav ═══ -->
-    <nav class="fixed top-6 md:top-10 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl z-50 bg-black/40 backdrop-blur-[50px] border border-white/[0.1] shadow-[0_40px_120px_rgba(0,0,0,0.9)] rounded-[3rem] transition-all duration-1000 hover:bg-black/60 overflow-hidden group hidden md:block">
-      <!-- Crystalline Shimmer Line -->
-      <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-[goldShimmer_4s_linear_infinite] bg-[length:200%_auto]"></div>
-      <!-- Ambient Inner Glow Layers -->
-      <div class="absolute inset-0 bg-gradient-to-r from-primary/[0.03] via-transparent to-primary/[0.03] pointer-events-none"></div>
-      <div class="absolute -inset-px bg-gradient-to-b from-white/[0.05] to-transparent pointer-events-none rounded-[3rem]"></div>
+    <!-- ═══ Desktop Top Nav (Crystal Elite Edition) ═══ -->
+    <nav class="fixed top-8 md:top-12 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl z-50 bg-black/40 backdrop-blur-[60px] border border-white/[0.12] shadow-[0_40px_150px_rgba(0,0,0,1)] rounded-[3.5rem] transition-all duration-1000 hover:bg-black/60 overflow-hidden group hidden md:block">
+      <!-- Sophisticated Top Shimmer -->
+      <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[1.5s] animate-[goldShimmer_6s_linear_infinite] bg-[length:200%_auto]"></div>
+      <!-- Multi-Layered Ambient Inner Glows -->
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/[0.04] via-transparent to-primary/[0.04] pointer-events-none"></div>
+      <div class="absolute inset-0 shadow-[inset_0_0_60px_rgba(255,255,255,0.03)] pointer-events-none"></div>
+      <div class="absolute -inset-px bg-gradient-to-b from-white/[0.08] to-transparent pointer-events-none rounded-[3.5rem]"></div>
       
-      <div class="flex justify-between items-center px-10 md:px-14 py-4 md:py-5 relative z-10">
-        <!-- Logo -->
+      <div class="flex justify-between items-center px-12 md:px-16 py-5 md:py-6 relative z-10">
+        <!-- Logo (Enlarged Elite) -->
         <a href="/index.html" class="flex-shrink-0 group/logo relative">
-          <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-0 group-hover/logo:opacity-100 transition-opacity duration-1000"></div>
-          <img src="/header_logo.png" alt="XND" class="h-10 md:h-12 w-auto object-contain relative z-10 transition-all duration-700 group-hover/logo:scale-105 group-hover/logo:brightness-110" />
+          <div class="absolute inset-0 bg-primary/30 blur-[40px] rounded-full opacity-0 group-hover/logo:opacity-100 transition-opacity duration-1000"></div>
+          <img src="/header_logo.png" alt="XND" class="h-14 md:h-18 w-auto object-contain relative z-10 transition-all duration-700 group-hover/logo:scale-105 group-hover/logo:brightness-125" />
         </a>
 
         <!-- Links -->
