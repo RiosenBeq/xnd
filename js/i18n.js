@@ -106,6 +106,8 @@ export const translations = {
     "brands.onmuzik.title": "Profesyonel Ses ve Işık",
     "brands.tiklahemenal.title": "E-Ticaret Platformu",
     "brands.xndtech.title": "IT Çözümleri",
+    "brands.nextgenlab.title": "Deep Tech Laboratuvarı",
+    "brands.nextgenbox.title": "Otonom Eğlence Kabinleri",
     "brands.view_all": "Tüm Ekosistemi Keşfet",
 
     // Brands Details (marka-detay.html)
@@ -118,6 +120,8 @@ export const translations = {
     "brand_page.visit_short": "Ziyaret Et",
     "brand_page.flagship": "Amiral Gemimiz",
     "brand_page.soon": "Yakında",
+    "brand_page.nextgenlab.desc": "Gelecek nesil dijital teknolojiler, yenilikçi laboratuvar çözümleri ve derin teknoloji araştırmaları (Deep Tech) odaklı stratejik teknoloji geliştirme partneri.",
+    "brand_page.nextgenbox.desc": "Yeni nesil otonom eğlence kabinleri. Gelişmiş ses yalıtımı, profesyonel akustik sistemler ve temassız rezervasyon altyapısıyla desteklenen modern karaoke deneyimi.",
 
     // Forms / Contact
     "contact.title": "İletişime Geçin",
@@ -271,6 +275,8 @@ export const translations = {
     "brands.onmuzik.title": "Pro Audio & Light",
     "brands.tiklahemenal.title": "E-Commerce Platform",
     "brands.xndtech.title": "IT Solutions",
+    "brands.nextgenlab.title": "Deep Tech Laboratory",
+    "brands.nextgenbox.title": "Autonomous Entertainment Cabins",
     "brands.view_all": "Explore Full Ecosystem",
 
     // Brands Details (marka-detay.html)
@@ -283,6 +289,8 @@ export const translations = {
     "brand_page.visit_short": "Visit",
     "brand_page.flagship": "Our Flagship",
     "brand_page.soon": "Coming Soon",
+    "brand_page.nextgenlab.desc": "A strategic technology development partner focusing on next-generation digital technologies, innovative laboratory solutions, and Deep Tech research.",
+    "brand_page.nextgenbox.desc": "Next-generation autonomous entertainment cabins. A modern karaoke experience supported by advanced sound insulation, professional acoustic systems, and contactless reservation infrastructure.",
 
     // Forms / Contact
     "contact.title": "Get in Touch",
