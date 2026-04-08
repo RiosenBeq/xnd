@@ -4,7 +4,15 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  
+  <!-- ═══ PERFORMANCE OPTIMIZATION ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
   <title>Basın Odası - XND Teknoloji Grubu</title>
+
   <meta content="XND Teknoloji Grubu güncel haberler, basın bültenleri ve duyurular" name="description"/>
   <link rel="canonical" href="https://xnd.com.tr/basin-odasi.html" />
   
@@ -47,7 +55,8 @@
     <!-- Featured News (Large Hero Article) -->
     <article class="reveal glass-card rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group mb-8 md:mb-12 relative h-[400px] md:h-[600px] hover:border-primary/30 transition-all duration-700 z-10">
       <!-- Background Image with zoom effect -->
-      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" alt="Featured News Image" />
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" alt="Featured News Image" fetchpriority="high" decoding="async" />
+
       
       <!-- Gradient Overlay for readability -->
       <div class="absolute inset-0 bg-gradient-to-t from-[#040810] via-[#040810]/60 to-transparent"></div>
@@ -75,7 +84,8 @@
       <!-- Grid Item 2 -->
       <article class="glass-card rounded-2xl md:rounded-3xl overflow-hidden group reveal relative h-[400px] md:h-[450px]">
         <div class="absolute inset-0 h-[50%] md:h-[55%] overflow-hidden border-b border-outline-variant/10">
-          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 md:saturate-150" alt="Alpenga Event Stage" />
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 md:saturate-150" alt="Alpenga Event Stage" loading="lazy" decoding="async" />
+
         </div>
         <div class="absolute bottom-0 left-0 w-full h-[50%] md:h-[45%] p-6 md:px-10 flex flex-col justify-between bg-surface-container-highest/90 backdrop-blur-xl border-t border-outline-variant/20">
           <div>
@@ -96,7 +106,8 @@
       <!-- Grid Item 3 -->
       <article class="glass-card rounded-2xl md:rounded-3xl overflow-hidden group reveal relative h-[400px] md:h-[450px]" style="transition-delay: 100ms">
         <div class="absolute inset-0 h-[50%] md:h-[55%] overflow-hidden border-b border-outline-variant/10">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="News Image" />
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="News Image" loading="lazy" decoding="async" />
+
         </div>
         <div class="absolute bottom-0 left-0 w-full h-[50%] md:h-[45%] p-6 md:px-10 flex flex-col justify-between bg-surface-container-highest/90 backdrop-blur-xl border-t border-outline-variant/20">
           <div>

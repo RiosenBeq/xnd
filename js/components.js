@@ -71,7 +71,7 @@ export function renderNavbar(activePage = 'home') {
         <!-- Logo (Enlarged Elite) -->
         <a href="/index.html" class="flex-shrink-0 group/logo relative">
           <div class="absolute inset-0 bg-primary/30 blur-[40px] rounded-full opacity-0 group-hover/logo:opacity-100 transition-opacity duration-1000"></div>
-          <img src="/header_logo.png" alt="XND" class="h-14 md:h-18 w-auto object-contain relative z-10 transition-all duration-700 group-hover/logo:scale-105 group-hover/logo:brightness-125" />
+          <img src="/header_logo.png" alt="XND" class="h-14 md:h-18 w-auto object-contain relative z-10 transition-all duration-700 group-hover/logo:scale-105 group-hover/logo:brightness-125" decoding="async" />
         </a>
 
         <!-- Links -->
@@ -97,7 +97,7 @@ export function renderNavbar(activePage = 'home') {
     <nav class="fixed top-0 left-0 right-0 z-50 md:hidden bg-black/40 backdrop-blur-3xl border-b border-white/[0.08]">
       <div class="flex justify-between items-center px-6 py-4">
         <a href="/index.html" class="flex-shrink-0">
-          <img src="/header_logo.png" alt="XND" class="h-10 w-auto object-contain" />
+          <img src="/header_logo.png" alt="XND" class="h-10 w-auto object-contain" decoding="async" />
         </a>
         <div class="flex items-center gap-4">
           <button id="langSwitcherMobile" class="text-[10px] uppercase font-bold tracking-widest text-white/40 bg-white/5 px-3 py-2 rounded-xl border border-white/10">
@@ -157,7 +157,7 @@ export function renderFooter() {
         <div class="grid grid-cols-2 md:grid-cols-4 gap-10 font-plus-jakarta text-sm leading-relaxed border-t border-white/[0.06] pt-14 relative z-10">
           <!-- Brand column -->
           <div class="space-y-6 col-span-2 md:col-span-1">
-            <img src="/header_logo.png" alt="XND Teknoloji Grubu" class="h-10 md:h-12 w-auto object-contain opacity-80" />
+            <img src="/header_logo.png" alt="XND Teknoloji Grubu" class="h-10 md:h-12 w-auto object-contain opacity-80" loading="lazy" decoding="async" />
             <div class="flex space-x-3">
               <a class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:-translate-y-1 text-on-surface-variant border border-white/5" href="https://www.instagram.com/xndteknolojigrubu" target="_blank"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
               <a class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:-translate-y-1 text-on-surface-variant border border-white/5" href="https://www.linkedin.com/company/xndgrouptr" target="_blank"><span class="material-symbols-outlined text-sm">work</span></a>
