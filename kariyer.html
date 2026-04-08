@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html class="dark" lang="tr">
 <head>
-  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-  <title>Kariyer — XND Technology Group</title>
-  <meta name="description" content="XND Teknoloji Grubu kariyer fırsatları — Dijital dünyanın öncü ekibine katılın." />
-  <link rel="canonical" href="https://xnd.com.tr/kariyer.html" />
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://xnd.com.tr/kariyer.html" />
-  <meta property="og:title" content="Kariyer — XND Technology Group" />
-  <meta property="og:description" content="XND Teknoloji Grubu kariyer fırsatları — Dijital dünyanın öncü ekibine katılın." />
-  <meta property="og:image" content="https://xnd.com.tr/og-image.jpg" />
-
-  <!-- GEO / Localization -->
-  <meta name="geo.region" content="TR-34" />
-  <meta name="geo.placename" content="Istanbul" />
-  <meta name="geo.position" content="41.015137;28.979530" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>XND Teknoloji Grubu</title>
+  <meta name="description" content="XND Teknoloji Grubu - Tüm teknolojiler, tek bir sistem." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/style.css" />
 </head>
-<body class="bg-surface text-on-surface">
+<body class="bg-surface text-on-surface selection:bg-primary/30 relative">
+  <div class="fixed inset-0 noise-bg"></div>
   <div id="navbar"></div>
 
-  <main class="relative pt-32 md:pt-48 pb-24 px-6 md:px-12 lg:px-16 max-w-7xl mx-auto" style="min-height: 80vh;">
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] md:w-[800px] h-[400px] md:h-[500px] bg-primary/8 rounded-full blur-[100px] pointer-events-none"></div>
-
-    <!-- Career Hero -->
-    <header class="relative z-10 mb-16 md:mb-24 reveal text-center">
-      <div class="inline-block px-3 py-1.5 bg-surface-container-high border border-outline-variant/10 mb-5 md:mb-6 glass-card rounded-lg">
-        <span data-i18n="career.hero.label" class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary">Kariyer</span>
-      </div>
-      <h1 data-i18n="career.hero.title" class="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-6 md:mb-8 leading-[0.9]">
-        Geleceği Birlikte<br /><span class="text-gradient">İnşa Edelim.</span>
-      </h1>
-      <p data-i18n="career.hero.desc" class="text-on-surface-variant text-base md:text-xl max-w-2xl font-light leading-relaxed mx-auto">
-        Aramıza katılın ve dijital dünyanın önde gelen teknoloji girişimlerine güç veren elit mühendislik kadromuzun bir parçası olun.
-      </p>
-    </header>
-
-    <!-- Why Us -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-20 md:mb-32 reveal">
-      <div class="glass-card p-8 md:p-12 text-center group rounded-2xl">
-        <div data-i18n="career.stats.li1.val" class="text-4xl md:text-6xl font-black stat-number mb-3 md:mb-4 group-hover:scale-105 transition-transform">Hibrit</div>
-        <p data-i18n="career.stats.li1.label" class="text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface-variant">Çalışma Modeli</p>
-      </div>
-      <div class="glass-card p-8 md:p-12 text-center group rounded-2xl">
-        <div data-i18n="career.stats.li2.val" class="text-4xl md:text-6xl font-black stat-number mb-3 md:mb-4 group-hover:scale-105 transition-transform">%100</div>
-        <p data-i18n="career.stats.li2.label" class="text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface-variant">Teknoloji Odaklılık</p>
-      </div>
-      <div class="glass-card p-8 md:p-12 text-center group rounded-2xl">
-        <div data-i18n="career.stats.li3.val" class="text-4xl md:text-6xl font-black stat-number mb-3 md:mb-4 group-hover:scale-105 transition-transform">∞</div>
-        <p data-i18n="career.stats.li3.label" class="text-[10px] uppercase tracking-[0.3em] font-bold text-on-surface-variant">Eğitim Desteği</p>
-      </div>
+  <main class="relative z-10 max-w-6xl mx-auto px-6 md:px-12 lg:px-16 pt-36 md:pt-44 pb-24 md:pb-32">
+    <section class="mb-14 md:mb-20">
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">XND Teknoloji Grubu</h1>
+      <p class="text-xl md:text-2xl text-primary font-bold">Tüm teknolojiler, tek bir sistem.</p>
     </section>
 
-    <!-- Open Positions -->
-    <section class="max-w-4xl mx-auto reveal">
-      <h2 data-i18n="career.jobs.title" class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 border-b border-outline-variant/20 pb-4">Açık Pozisyonlar</h2>
-      <div class="space-y-3 md:space-y-4">
-        <a href="mailto:hr@xndtechnology.com" class="block glass-card p-6 md:p-8 hover:bg-surface-container-highest/40 transition-all group rounded-xl md:rounded-2xl">
-          <div class="flex justify-between items-center">
-             <div>
-                <h3 data-i18n="career.jobs.j1.title" class="text-lg md:text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Senior Frontend Engineer</h3>
-                <p data-i18n="career.jobs.j1.desc" class="text-xs md:text-sm text-on-surface-variant mt-1">React / Vue — Remote/Hybrid</p>
-             </div>
-             <span class="material-symbols-outlined text-primary">arrow_forward</span>
-          </div>
-        </a>
-        <a href="mailto:hr@xndtechnology.com" class="block glass-card p-6 md:p-8 hover:bg-surface-container-highest/40 transition-all group rounded-xl md:rounded-2xl">
-          <div class="flex justify-between items-center">
-             <div>
-                <h3 data-i18n="career.jobs.j2.title" class="text-lg md:text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Backend Developer</h3>
-                <p data-i18n="career.jobs.j2.desc" class="text-xs md:text-sm text-on-surface-variant mt-1">Node.js / PostgreSQL — Remote</p>
-             </div>
-             <span class="material-symbols-outlined text-primary">arrow_forward</span>
-          </div>
-        </a>
-        <a href="mailto:hr@xndtechnology.com" class="block glass-card p-6 md:p-8 hover:bg-surface-container-highest/40 transition-all group rounded-xl md:rounded-2xl">
-          <div class="flex justify-between items-center">
-             <div>
-                <h3 data-i18n="career.jobs.j3.title" class="text-lg md:text-xl font-bold text-on-surface group-hover:text-primary transition-colors">DevOps Engineer</h3>
-                <p data-i18n="career.jobs.j3.desc" class="text-xs md:text-sm text-on-surface-variant mt-1">AWS / Kubernetes — Hybrid</p>
-             </div>
-             <span class="material-symbols-outlined text-primary">arrow_forward</span>
-          </div>
-        </a>
-      </div>
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Entegre Teknolojinin Yeni Standardı</h2>
+      <p>Teknoloji artık tek başına bir değer değil.</p>
+      <p>Gerçek değer, farklı sistemlerin kusursuz bir bütün olarak çalıştığı noktada ortaya çıkar.</p>
+      <p>XND Teknoloji Grubu, bu bütünlüğü kurmak için vardır.</p>
+      <p>Ses, ışık, görüntü, bilişim altyapıları, network mimarileri ve cihazlar arası haberleşme sistemleri…</p>
+      <p>Hepsi tek başına anlamlıdır.</p>
+      <p>Ancak birlikte çalıştıklarında gerçek bir deneyime dönüşürler.</p>
+      <p>XND, bu dönüşümü tasarlar.</p>
+    </section>
+
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Teknolojiye Bakış</h2>
+      <p>XND için teknoloji;</p>
+      <p>ürünlerden, markalardan veya bağımsız sistemlerden ibaret değildir.</p>
+      <p>Teknoloji;</p>
+      <p>birbirine bağlı, sürekli iletişim halinde olan ve kesintisiz çalışan bir ekosistemdir.</p>
+      <p>Bu nedenle XND, hiçbir projeye parça parça yaklaşmaz.</p>
+      <p>Her zaman uçtan uca düşünür, tek bir sistem olarak kurgular ve hayata geçirir.</p>
+    </section>
+
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Ne Yapar?</h2>
+      <p>XND Teknoloji Grubu;</p>
+      <p>Ses, ışık, görüntü ve bilişim altyapıları dahil olmak üzere tüm teknoloji katmanlarını kapsar, entegre eder ve yönetir.</p>
+      <p>Bu kapsamda;</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Profesyonel ses, ışık ve görüntü sistemleri</li>
+        <li>Bilişim altyapıları ve IT çözümleri</li>
+        <li>Network ve veri iletişim mimarileri</li>
+        <li>Cihazlar arası haberleşme ve entegrasyon sistemleri</li>
+        <li>Otomasyon ve kontrol altyapıları</li>
+      </ul>
+      <p>Amaç yalnızca kurulum yapmak değil;</p>
+      <p>uzun vadede stabil, sürdürülebilir ve yüksek performanslı çalışan sistemler oluşturmaktır.</p>
+    </section>
+
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Nasıl Yapar?</h2>
+      <p>XND’nin metodolojisi, sadelik üzerine kuruludur.</p>
+      <p>Ama bu sadelik, yüksek seviyede bir mühendislik yaklaşımının sonucudur.</p>
+
+      <h3 class="text-xl md:text-2xl font-extrabold mt-8">1. Anlar</h3>
+      <p>Her proje, derin bir analiz ile başlar.</p>
+      <p>Mekânın yapısı, kullanıcı davranışı, operasyonel ihtiyaçlar ve veri akışı değerlendirilir.</p>
+      <p>Çünkü doğru sistem, doğru sorularla başlar.</p>
+
+      <h3 class="text-xl md:text-2xl font-extrabold mt-8">2. Tasarlar</h3>
+      <p>Tüm sistemler, tek tek değil;</p>
+      <p>uçtan uca bir mimari olarak kurgulanır.</p>
+      <p>Network altyapısından ses sistemine,</p>
+      <p>görüntü çözümlerinden kontrol sistemlerine kadar</p>
+      <p>her bileşen birbiriyle uyumlu olacak şekilde planlanır.</p>
+
+      <h3 class="text-xl md:text-2xl font-extrabold mt-8">3. Entegre Eder</h3>
+      <p>Farklı teknolojiler, tek bir dilde buluşturulur.</p>
+      <p>Ses, ışık, görüntü, IT ve network altyapıları</p>
+      <p>birbirine bağlı ve senkronize çalışan bir sistem haline gelir.</p>
+      <p>Cihazlar konuşur.</p>
+      <p>Sistemler birlikte çalışır.</p>
+      <p>Kullanıcı ise sadece sonucu deneyimler.</p>
+
+      <h3 class="text-xl md:text-2xl font-extrabold mt-8">4. Hayata Geçirir</h3>
+      <p>Kurulum, XND için sadece başlangıçtır.</p>
+      <p>Tüm sistemler test edilir, optimize edilir</p>
+      <p>ve maksimum performansla devreye alınır.</p>
+      <p>Her detay, uzun vadeli stabilite için yapılandırılır.</p>
+
+      <h3 class="text-xl md:text-2xl font-extrabold mt-8">5. Sürekliliği Sağlar</h3>
+      <p>Gerçek kalite, kurulumdan sonra ortaya çıkar.</p>
+      <p>XND, sistemlerin</p>
+      <p>kesintisiz, stabil ve sürdürülebilir şekilde çalışmasını garanti altına alır.</p>
+      <p>Çünkü iyi bir sistem, sadece çalışmaz;</p>
+      <p>her zaman aynı performansla çalışır.</p>
+    </section>
+
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Yaklaşım</h2>
+      <p>XND Teknoloji Grubu, teknolojiyi karmaşıklaştırmaz.</p>
+      <p>Onu anlaşılır, yönetilebilir ve kusursuz hale getirir.</p>
+      <p>Her projede hedef:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Minimum karmaşıklık</li>
+        <li>Maksimum verim</li>
+        <li>Uzun vadeli stabilite</li>
+      </ul>
+    </section>
+
+    <section class="space-y-4 mb-12">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Deneyim Odaklı Sistemler</h2>
+      <p>İyi bir teknoloji görünmezdir.</p>
+      <p>Ama etkisi her yerde hissedilir.</p>
+      <p>Bir mekâna girildiğinde;</p>
+      <p>sesin dengesi, ışığın atmosferi, ekranların akışı…</p>
+      <p>Hiçbiri dikkat çekmez.</p>
+      <p>Çünkü hepsi doğru çalışır.</p>
+      <p>İşte bu, XND’nin imzasıdır.</p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl md:text-4xl font-black text-primary">Gelecek Vizyonu</h2>
+      <p>Gelecek, daha fazla teknoloji değil;</p>
+      <p>daha doğru entegre edilmiş teknoloji gerektirir.</p>
+      <p>XND Teknoloji Grubu,</p>
+      <p>farklı sistemleri bir araya getiren değil,</p>
+      <p>onları tek bir akıllı yapı haline getiren bir yaklaşım inşa eder.</p>
+      <br/>
+      <p>XND Teknoloji Grubu,</p>
+      <p>teknolojiyi kurmaz.</p>
+      <p>Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.</p>
     </section>
   </main>
 
   <div id="footer"></div>
 
   <script type="module">
-    import { renderNavbar, renderFooter, initScrollReveal, renderCookieConsent } from '/js/components.js';
-    import { initLanguage } from '/js/i18n.js';
-    renderNavbar('career');
+    import { renderNavbar, renderFooter } from './js/components.js';
+    renderNavbar();
     renderFooter();
-    renderCookieConsent();
-    initScrollReveal();
-    initLanguage();
   </script>
 </body>
 </html>
