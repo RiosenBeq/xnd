@@ -133,90 +133,14 @@ export function renderFooter() {
   const footerContainer = document.getElementById('footer');
   if (!footerContainer) return;
 
-  const lang = getCurrentLanguage();
-  const t = translations[lang];
-
   footerContainer.innerHTML = `
-    <footer class="relative w-full border-t border-white/[0.04] overflow-hidden bg-[#040810] pb-20 md:pb-0">
-      <!-- Ambient glow -->
-      <div class="absolute bottom-[-10%] right-[-8%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px] pointer-events-none mix-blend-screen opacity-40"></div>
-      
-      <div class="max-w-7xl mx-auto pt-20 pb-10 px-6 md:px-12 lg:px-16">
-        <!-- Large headline -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
-          <div class="relative z-10">
-            <h2 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-3 text-white leading-[0.9]">Let's build <br/><span class="text-gradient italic">the future.</span></h2>
-            <p data-i18n="footer.desc" class="text-on-surface-variant max-w-sm text-sm leading-relaxed mt-5">${t['footer.desc']}</p>
-          </div>
-          <a data-i18n="footer.contact" href="/iletisim.html" class="btn-premium px-8 py-4 text-xs tracking-widest uppercase relative z-10 hover:scale-105 transition-transform duration-500">
-            ${t['footer.contact']} <span class="material-symbols-outlined ml-2 text-sm">rocket_launch</span>
-          </a>
-        </div>
-        
-        <!-- Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 font-plus-jakarta text-sm leading-relaxed border-t border-white/[0.06] pt-14 relative z-10">
-          <!-- Brand column -->
-          <div class="space-y-6 col-span-2 md:col-span-1">
-            <img src="/header_logo.png" alt="XND Teknoloji Grubu" class="h-10 md:h-12 w-auto object-contain opacity-80" />
-            <div class="flex space-x-3">
-              <a class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:-translate-y-1 text-on-surface-variant border border-white/5" href="https://www.instagram.com/xndteknolojigrubu" target="_blank"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
-              <a class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:-translate-y-1 text-on-surface-variant border border-white/5" href="https://www.linkedin.com/company/xndgrouptr" target="_blank"><span class="material-symbols-outlined text-sm">work</span></a>
-              <a class="w-9 h-9 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:-translate-y-1 text-on-surface-variant border border-white/5" href="https://xnd.com.tr" target="_blank"><span class="material-symbols-outlined text-sm">language</span></a>
-            </div>
-          </div>
-          
-          <!-- Contact column -->
-          <div class="space-y-5">
-            <p data-i18n="footer.contact" class="text-white/50 font-bold uppercase tracking-[0.2em] text-[10px]">${t['footer.contact']}</p>
-            <ul class="space-y-3 text-on-surface-variant text-xs">
-              <li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-sm mt-0.5 text-primary">location_on</span><span data-i18n="footer.address" class="leading-relaxed">${t['footer.address']}</span></li>
-              <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-sm text-primary">call</span><a href="tel:+908502419575" class="hover:text-primary transition-colors">+90 850 241 95 75</a></li>
-              <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-sm text-primary">mail</span><a href="mailto:iletisim@xnd.com.tr" class="hover:text-primary transition-colors">iletisim@xnd.com.tr</a></li>
-              <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-sm text-primary">schedule</span><span data-i18n="footer.hours">${t['footer.hours']}</span></li>
-            </ul>
-          </div>
-          
-          <!-- Quick links column -->
-          <div class="space-y-5">
-            <p data-i18n="footer.quick_links" class="text-white/50 font-bold uppercase tracking-[0.2em] text-[10px]">${t['footer.quick_links']}</p>
-            <ul class="space-y-2.5 text-on-surface-variant text-xs">
-              <li><a data-i18n="nav.home" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/index.html">${t['nav.home']}</a></li>
-              <li><a data-i18n="nav.about" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/hakkimizda.html">${t['nav.about']}</a></li>
-              <li><a data-i18n="nav.services" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/hizmetler.html">${t['nav.services']}</a></li>
-              <li><a data-i18n="nav.brands" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/marka-detay.html">${t['nav.brands']}</a></li>
-              <li><a data-i18n="nav.news" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/basin-odasi.html">${t['nav.news'] || 'Basın Odası'}</a></li>
-              <li><a data-i18n="nav.career" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/kariyer.html">${t['nav.career']}</a></li>
-              <li><a data-i18n="nav.investors" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/yatirimci-iliskileri.html">${t['nav.investors'] || 'Yatırımcı İlişkileri'}</a></li>
-            </ul>
-          </div>
-          
-          <!-- Legal column -->
-          <div class="space-y-5">
-            <p data-i18n="footer.legal" class="text-white/50 font-bold uppercase tracking-[0.2em] text-[10px]">${t['footer.legal']}</p>
-            <ul class="space-y-2.5 text-on-surface-variant text-xs">
-              <li><a data-i18n="footer.privacy" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/yasal.html">${t['footer.privacy']}</a></li>
-              <li><a data-i18n="footer.terms" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/yasal.html">${t['footer.terms']}</a></li>
-              <li><a data-i18n="footer.kvkk" class="hover:text-primary hover:translate-x-1 transition-all inline-block" href="/kvkk.html">NextGenBox KVKK</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Bottom bar with credits -->
-      <div class="px-6 md:px-16 lg:px-24 py-5 border-t border-white/[0.04] flex flex-col md:flex-row justify-between items-center gap-4 bg-black/20 relative z-10 w-full max-w-7xl mx-auto">
-        <p data-i18n="footer.copyright" class="text-white/30 text-[10px] uppercase tracking-[0.3em] font-medium">${t['footer.copyright']}</p>
-        <div class="flex items-center gap-6">
-          <div class="flex gap-6 text-[10px] uppercase tracking-widest text-white/30 font-medium">
-            <a data-i18n="footer.privacy" href="/yasal.html" class="hover:text-white transition-colors">${t['footer.privacy']}</a>
-            <a data-i18n="footer.terms" href="/yasal.html" class="hover:text-white transition-colors">${t['footer.terms']}</a>
-          </div>
-          <span class="text-white/20">|</span>
-          <a href="https://nextgenlab.com.tr" target="_blank" class="flex items-center gap-2 text-[10px] text-white/40 hover:text-primary transition-colors uppercase tracking-widest font-medium group">
-            <span>Designed by</span>
-            <img src="/logo_nextgen.png" alt="NextGen Lab" class="h-4 w-auto object-contain opacity-50 group-hover:opacity-90 transition-opacity" onerror="this.style.display='none'" />
-            <span class="font-bold">NextGen Lab</span>
-          </a>
-        </div>
+    <footer class="relative w-full border-t border-white/[0.08] bg-[#040810] pb-20 md:pb-0">
+      <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16">
+        <h3 class="text-2xl md:text-4xl font-black text-white mb-4">XND Teknoloji Grubu</h3>
+        <p class="text-primary font-bold mb-4">Tüm teknolojiler, tek bir sistem.</p>
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed max-w-3xl">
+          XND Teknoloji Grubu, teknolojiyi kurmaz. Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.
+        </p>
       </div>
     </footer>
   `;
