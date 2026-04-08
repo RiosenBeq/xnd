@@ -211,10 +211,9 @@ export function renderFooter() {
             <a data-i18n="footer.terms" href="/yasal.html" class="hover:text-white transition-colors">${t['footer.terms']}</a>
           </div>
           <span class="text-white/20">|</span>
-          <a href="https://nextgenlab.com.tr" target="_blank" class="flex items-center gap-2 text-[10px] text-white/40 hover:text-primary transition-colors uppercase tracking-widest font-medium group">
+          <a href="https://nextgenmedya.com.tr/" target="_blank" rel="noopener" class="flex items-center gap-2 text-[10px] text-white/40 hover:text-primary transition-colors uppercase tracking-widest font-medium group">
             <span>Designed by</span>
-            <img src="/logo_nextgen.png" alt="NextGen Lab" class="h-4 w-auto object-contain opacity-50 group-hover:opacity-90 transition-opacity" onerror="this.style.display='none'" />
-            <span class="font-bold">NextGen Lab</span>
+            <span class="font-bold group-hover:text-primary transition-colors">NextGen Medya</span>
           </a>
         </div>
       </div>

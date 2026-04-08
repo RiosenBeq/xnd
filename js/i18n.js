@@ -28,6 +28,13 @@ export const translations = {
     "news.featured": "Öne Çıkan Haber",
     "news.all": "Tüm Haberler",
     "news.read": "Haberi Oku",
+    "news.back": "Haberlere Dön",
+    "news.share": "PAYLAŞ",
+    "news.tags.investment": "Yatırım",
+    "news.tags.cloud": "Cloud",
+    "news.tags.sustainability": "Sürdürülebilirlik",
+    "news.subbadge": "Güncel Meseleler",
+    "news.intro": "XND Teknoloji Grubu ve bünyesindeki markalarla ilgili en güncel haberler, basın bültenleri ve duyurular.",
     
     // index.html - Hero
     "home.hero.badge": "Entegre Teknoloji Çözümleri",
@@ -68,7 +75,7 @@ export const translations = {
     "cta.btn": "Proje Talebi Oluştur",
     "cta.guarantee": "24 Saat İçinde Dönüş Garantisi",
     
-    // About Us
+    // About Us Content
     "about.intro.title1": "Teknoloji Artık",
     "about.intro.title2": "Tek Başına",
     "about.intro.title3": "Bir Değer Değil.",
@@ -141,9 +148,7 @@ export const translations = {
     "brand_page.flagship": "Amiral Gemimiz",
     "brand_page.soon": "Yakında",
     "brand_page.nextgenlab.desc": "Yeni nesil dijital teknolojiler, yenilikçi laboratuvar çözümleri ve derin teknoloji araştırmaları (Deep Tech) odaklı stratejik teknoloji geliştirme partneri.",
-    "brand_page.nextgenbox.desc": "Yeni nesil otonom eğlence kabinleri. Gelişmiş ses yalıtımı, profesyonel akustik sistemler ve temassız rezervasyon altyapısıyla desteklenen modern karaoke deneyimi.",
-
-    // Brands Details Descriptions
+    "brand_page.nextgenbox.desc": "Yeni nesil otonom entertainment kabinleri. Gelişmiş ses yalıtımı, profesyonel akustik sistemler ve temassız rezervasyon altyapısıyla desteklenen modern karaoke deneyimi.",
     "brand_page.clicknow.desc": "Dijital pazarlama ve reklam yönetimi. Data-driven stratejiler, ROI odaklı performans reklamları, kreatif tasarım ve içerik üretimi.",
     "brand_page.onmuzik.desc": "Profesyonel ses, ışık ve görüntü sistemleri online mağazası. Türkiye'nin 1 numaralı Pioneer DJ bayisi.",
     "brand_page.tikla.desc": "E-ticaret alışveriş platformu. Geniş ürün gamı, hızlı teslimat ve güvenli alışveriş altyapısı.",
@@ -151,7 +156,7 @@ export const translations = {
     "brand_page.onproje.desc": "Profesyonel AV kurulumları. Akustik analiz, mühendislik altyapısı, DSP ayarları, ışık senaryosu ve LED ekran entegrasyonu.",
     "brand_page.alpenga.desc": "Kurumsal etkinlik ve lansman organizasyonları. Sahne tasarımı ve teknik ekip yönetiminde yaratıcı çözüm ortağı.",
 
-    // News Articles
+    // News Details
     "news.article1.title": "XND Teknoloji, Yeni Veri Merkezi Yatırımını Duyurdu",
     "news.article1.desc": "Türkiye'deki dijital altyapıyı global standartların ötesine taşımak amacıyla XND Teknoloji Grubu, İstanbul Silivri bölgesinde 50 milyon dolarlık dev bir veri merkezi inşasına başlıyor. Projenin 2027'nin ilk çeyreğinde tamamlanması öngörülüyor.",
     "news.article1.date": "24 Mart 2026",
@@ -165,12 +170,10 @@ export const translations = {
     "news.article1.h2_green": "\"Yeşil Enerji\" Stratejisi",
     "news.article1.p3": "Karbon ayak izini sıfırlama taahhüdüne sıkı sıkıya bağlı kalan grup, tesisin enerji ihtiyacının %60'ını kendi arazisine kurulacak güneş enerjisi (GES) istasyonlarından elde etmeyi planlıyor. Kalan enerji gereksinimi ise yalnızca sertifikalı rüzgar enerjisi tedarik anlaşmaları (PPA) üzerinden sağlanarak tam sürdürülebilirlik ilkelerine riayet edilecek.",
     "news.article1.p4": "Projenin ilk kazısı önümüzdeki ay gerçekleştirilecek lansman töreninin ardından yapılacak.",
-
     "news.article2.title": "Alpenga, TechSummit 2026'nın Ana Sponsoru Oldu",
     "news.article2.desc": "Kurumsal etkinlik sektörünün yıldızı Alpenga, dev teknoloji zirvesinin tüm sahne ve prodüksiyon işlemlerini üstlendi.",
     "news.article2.date": "18 Mart 2026",
     "news.article2.tag": "Etkinlik",
-
     "news.article3.title": "Click Now Digital, Yılın Performans Ajansı Seçildi",
     "news.article3.desc": "Sıra dışı ROAS oranları ve kreatif kampanyalarıyla Click NOW, dijital pazarlama ödüllerine altın damgasını vurdu.",
     "news.article3.date": "10 Mart 2026",
@@ -183,7 +186,7 @@ export const translations = {
     "career.stats.li1.label": "Çalışma Modeli",
     "career.stats.li1.val": "Hibrit",
     "career.stats.li2.label": "Teknoloji Odaklılık",
-    "career.stats.li2.val": "%100",
+    "career.stats.li2.val": "100%",
     "career.stats.li3.label": "Eğitim Desteği",
     "career.stats.li3.val": "∞",
     "career.jobs.title": "Açık Pozisyonlar",
@@ -199,8 +202,11 @@ export const translations = {
     "investors.hero.title": "Büyüme <span class=\"text-gradient\">Vizyonumuz</span>",
     "investors.hero.desc": "Sürdürülebilir büyüme, çeşitlendirilmiş teknoloji portföyü ve pazar liderliği stratejilerimizle değer katıyoruz.",
     "investors.stats.li1.val": "%240",
+    "investors.stats.li1.label": "Yıllık Büyüme (YoY)",
     "investors.stats.li2.val": "6+",
+    "investors.stats.li2.label": "Güçlü İştirak & Marka",
     "investors.stats.li3.val": "B2B",
+    "investors.stats.li3.label": "Lider Ekosistem",
     "investors.reports.title": "Finansal Raporlar",
     "investors.reports.desc": "Şeffaflık ilkemiz gereği tüm çeyreklik değerlendirmelerimiz ve yıllık faaliyet raporlarımız kamuoyuyla paylaşılmaktadır.",
     "investors.reports.li1": "2025 Yıllık Faaliyet Raporu",
@@ -208,37 +214,6 @@ export const translations = {
     "investors.reports.li3": "Kurumsal Yönetim İlkeleri",
     "investors.contact.title": "Yatırımcı İletişimi",
     "investors.contact.desc": "Kurumsal iletişim ve yatırımcı ilişkileri ile ilgili tüm sorularınız için bize ulaşabilirsiniz.",
-
-    // About Page
-    "about.intro.title1": "Teknoloji Artık",
-    "about.intro.title2": "Tek Başına",
-    "about.intro.title3": "Bir Değer Değil.",
-    "about.intro.p1": "Gerçek değer, farklı sistemlerin kusursuz bir bütün olarak çalıştığı noktada ortaya çıkar. XND Teknoloji Grubu, bu bütünlüğü kurmak için vardır.",
-    "about.intro.p2": "\"XND için teknoloji; ürünlerden veya bağımsız sistemlerden ibaret değildir. Teknoloji; birbirine bağlı, sürekli iletişim halinde olan ve kesintisiz çalışan bir ekosistemdir.\"",
-    "about.uiux.title": "Ses, Işık & Görüntü",
-    "about.uiux.desc": "Profesyonel AV sistemlerini mühendislik hassasiyetiyle tasarlıyor, kuruyoruz.",
-    "about.web.title": "Bilişim & IT Altyapısı",
-    "about.web.desc": "Kurumsal IT altyapınızın tamamını güvence altına alıyoruz.",
-    "about.video.title": "Network & Veri İletişimi",
-    "about.video.desc": "Yüksek performanslı ağ mimarileri ve cihazlar arası haberleşme altyapısı kuruyoruz.",
-    "about.game.title": "Otomasyon & Kontrol",
-    "about.game.desc": "Farklı sistemleri tek bir akıllı yapıda harmanlayan otomasyon altyapıları kuruyoruz.",
-
-    // Methodology & Testimonials & CTA
-    "method.title": "Nasıl<br/><span class=\"text-gradient\">Çalışıyoruz?</span>",
-    "testi.1.quote": "XND'nin entegre sistem yaklaşımı sayesinde tüm altyapımız tek merkezden yönetilir hale geldi. Arızasız, kesintisiz ve stabil bir çalışma dönemi yaşıyoruz.",
-    "testi.2.quote": "Ses, görüntü ve IT sistemlerimizin birbirine konuştuğunu ilk kez XND ile gördük. Bu entegrasyon seviyesi başka hiçbir firmada yoktu.",
-    "testi.3.quote": "Kurulumdan sonra da yanımızdalar. Sistemlerin sürekliliğini garanti eden desteğimiz var. Gerçek anlamda uzun vadeli bir teknoloji ortağı.",
-    "cta.desc": "Ses, ışık, bilişim ve otomasyon altyapılarınızı tek bir entegre sistem altında birleştirmek için hazırız. Projenizi bizimle paylaşın.",
-    "cta.guarantee": "24 Saat İçinde Dönüş Garantisi",
-
-    "news.back": "Haberlere Dön",
-    "news.share": "PAYLAŞ",
-    "news.tags.investment": "Yatırım",
-    "news.tags.cloud": "Cloud",
-    "news.tags.sustainability": "Sürdürülebilirlik",
-    "news.subbadge": "Güncel Meseleler",
-    "news.intro": "XND Teknoloji Grubu ve bünyesindeki markalarla ilgili en güncel haberler, basın bültenleri ve duyurular.",
 
     // Forms / Contact
     "contact.hero.label": "İletişim Merkezi",
@@ -312,7 +287,7 @@ export const translations = {
     "nav.cta": "Get a Quote",
 
     // Footer
-    "footer.desc": "Integrated digital, operational, and technological solutions accelerating brand growth.",
+    "footer.desc": "Integrated technology group unifying audio, light, visual, IT, and automation infrastructures into a single system.",
     "footer.contact": "Contact",
     "footer.address": "Cevizli Mah. Tugayyolu Cad. No:69C Piazza AVM, Maltepe/Istanbul",
     "footer.hours": "Business Days 10.00–18.30",
@@ -328,6 +303,13 @@ export const translations = {
     "news.featured": "Featured",
     "news.all": "All News",
     "news.read": "Read Article",
+    "news.back": "Back to News",
+    "news.share": "SHARE",
+    "news.tags.investment": "Investment",
+    "news.tags.cloud": "Cloud",
+    "news.tags.sustainability": "Sustainability",
+    "news.subbadge": "Current Affairs",
+    "news.intro": "The latest news, press releases, and announcements regarding XND Technology Group and its member brands.",
     
     // index.html - Hero
     "home.hero.badge": "Integrated Technology Solutions",
@@ -368,7 +350,7 @@ export const translations = {
     "cta.btn": "Request a Project",
     "cta.guarantee": "Guaranteed Response within 24 Hours",
 
-    // About Us
+    // About Us Content
     "about.intro.title1": "Technology Is No Longer",
     "about.intro.title2": "A Value",
     "about.intro.title3": "On Its Own.",
@@ -442,8 +424,6 @@ export const translations = {
     "brand_page.soon": "Coming Soon",
     "brand_page.nextgenlab.desc": "A strategic technology development partner focusing on next-generation digital technologies, innovative laboratory solutions, and Deep Tech research.",
     "brand_page.nextgenbox.desc": "Next-generation autonomous entertainment cabins. A modern karaoke experience supported by advanced sound insulation, professional acoustic systems, and contactless reservation infrastructure.",
-
-    // Brands Details Descriptions
     "brand_page.clicknow.desc": "Digital marketing and advertising management. Data-driven strategies, ROI-focused performance ads, creative design, and content production.",
     "brand_page.onmuzik.desc": "Online store for professional audio, lighting, and video systems. Turkey's #1 Pioneer DJ dealer.",
     "brand_page.tikla.desc": "E-commerce shopping platform. Wide product range, fast delivery, and secure shopping infrastructure.",
@@ -451,7 +431,7 @@ export const translations = {
     "brand_page.onproje.desc": "Professional AV installations. Acoustic analysis, engineering infrastructure, DSP settings, lighting scenarios, and LED screen integration.",
     "brand_page.alpenga.desc": "Corporate event and launch organizations. A creative solution partner in stage design and technical team management.",
 
-    // News Articles
+    // News Details
     "news.article1.title": "XND Technology Announces New Data Center Investment",
     "news.article1.desc": "Aiming to push digital infrastructure in Turkey beyond global standards, XND Technology Group is starting the construction of a massive 50 million dollar data center in the Silivri region of Istanbul. The project is expected to be completed in the first quarter of 2027.",
     "news.article1.date": "March 24, 2026",
@@ -465,12 +445,10 @@ export const translations = {
     "news.article1.h2_green": "\"Green Energy\" Strategy",
     "news.article1.p3": "Continuing its commitment to zero carbon footprint, the group plans to obtain 60% of the facility's energy needs from solar energy (GES) stations to be installed on its own land. The remaining energy requirement will be met only through certified wind energy power purchase agreements (PPA), complying with full sustainability principles.",
     "news.article1.p4": "The first excavation of the project will take place following the launch ceremony to be held next month.",
-
     "news.article2.title": "Alpenga Becomes Main Sponsor of TechSummit 2026",
     "news.article2.desc": "Alpenga, the star of the corporate events sector, has undertaken all stage and production operations for the giant technology summit.",
     "news.article2.date": "March 18, 2026",
     "news.article2.tag": "Event",
-
     "news.article3.title": "Click Now Digital Named Performance Agency of the Year",
     "news.article3.desc": "With extraordinary ROAS rates and creative campaigns, Click NOW made its golden mark on the digital marketing awards.",
     "news.article3.date": "March 10, 2026",
@@ -479,7 +457,7 @@ export const translations = {
     // Career
     "career.hero.label": "Careers",
     "career.hero.title": "Let's Build the<br /><span class=\"text-gradient\">Future Together.</span>",
-    "career.hero.desc": "Join us and become part of our elite engineering team powering the digital world's leading technology ventures.",
+    "career.hero.desc": "Join us and become part of our engineering team powering the digital world's leading technology ventures.",
     "career.stats.li1.label": "Work Model",
     "career.stats.li1.val": "Hybrid",
     "career.stats.li2.label": "Tech-Focused",
@@ -512,37 +490,6 @@ export const translations = {
     "investors.contact.title": "Investor Communication",
     "investors.contact.desc": "You can reach us for all your questions regarding corporate communication and investor relations.",
 
-    // About Page
-    "about.intro.title1": "Technology Is No Longer",
-    "about.intro.title2": "A Value",
-    "about.intro.title3": "On Its Own.",
-    "about.intro.p1": "Real value emerges at the point where different systems work together as a seamless whole. XND Technology Group exists to build that unity.",
-    "about.intro.p2": "\"For XND, technology is not just products or independent systems. Technology is an interconnected, continuously communicating, and uninterruptedly operating ecosystem.\"",
-    "about.uiux.title": "Audio, Light & Visual",
-    "about.uiux.desc": "We design and install professional AV systems with engineering precision.",
-    "about.web.title": "IT Infrastructure",
-    "about.web.desc": "We secure your entire corporate IT infrastructure from servers to endpoints.",
-    "about.video.title": "Network & Data Communication",
-    "about.video.desc": "We build your institution's digital backbone with high-performance network architectures.",
-    "about.game.title": "Automation & Control",
-    "about.game.desc": "We build automation infrastructures that harmonize different systems into a single intelligent structure.",
-
-    // Methodology & Testimonials & CTA
-    "method.title": "How We<br/><span class=\"text-gradient\">Work?</span>",
-    "testi.1.quote": "Thanks to XND's integrated system approach, our entire infrastructure is now managed from a single center. A fault-free, stable working period.",
-    "testi.2.quote": "For the first time with XND, we saw our audio, visual, and IT systems actually communicating with each other. No other firm had this level of integration.",
-    "testi.3.quote": "They're still by our side after installation. Guaranteed support for system continuity. A truly long-term technology partner.",
-    "cta.desc": "We're ready to unify your audio, lighting, IT, and automation infrastructures under a single integrated system. Share your project with us.",
-    "cta.guarantee": "24-Hour Response Guarantee",
-
-    "news.back": "Back to News",
-    "news.share": "SHARE",
-    "news.tags.investment": "Investment",
-    "news.tags.cloud": "Cloud",
-    "news.tags.sustainability": "Sustainability",
-    "news.subbadge": "Current Affairs",
-    "news.intro": "The latest news, press releases, and announcements regarding XND Technology Group and its member brands.",
-
     // Forms / Contact
     "contact.hero.label": "Contact Center",
     "contact.hero.title": "Let's Shape the<br/><span class=\"text-gradient\">Future Together.</span>",
@@ -567,7 +514,7 @@ export const translations = {
     "contact.info.phone_title": "Phone / WhatsApp",
     "contact.info.social_title": "Instagram",
     "contact.info.warning": "Meetings without a reservation are not accepted. Please book an appointment for office visits.",
-
+    
     // Shared
     "shared.loading": "Loading...",
 
@@ -577,11 +524,11 @@ export const translations = {
     "legal.updated": "Last Updated: March 27, 2026",
     "legal.kvkk.title": "1. Data Protection Notice (KVKK)",
     "legal.kvkk.p1": "As XND Technology Group, we attach the utmost importance to the security of your personal data within the scope of Turkey's Personal Data Protection Law No. 6698 (\"KVKK\").",
-    "legal.kvkk.p2": "As the data controller, your personal data is processed solely for the fulfillment of legal obligations, performance of contracts, and in line with our legitimate interests. Collected data may include identity info, contact info, customer transaction info, and digital footprint data (cookies, IP address, etc.).",
-    "legal.kvkk.p3": "Your personal data may be shared with domestic and international business partners, suppliers, and authorized public institutions within the framework of legal obligations and business partnerships. Under Article 11 of the KVKK, you have rights to access, correct, delete, request transfer of your data, and object to processing.",
+    "legal.kvkk.p2": "As the data controller, your personal data is processed solely for the fulfillment of legal obligations, performance of contracts, and in line with our legitimate interests.",
+    "legal.kvkk.p3": "Your personal data may be shared with domestic and international business partners, suppliers, and authorized public institutions within the framework of legal obligations.",
     "legal.privacy.title": "2. Privacy Policy",
-    "legal.privacy.p1": "When you visit our website, certain personal and anonymous data is collected to provide you with better service. This may include name-surname, email, phone number, IP address, browser and device info, and page interaction data.",
-    "legal.privacy.p2": "Collected data is used for service delivery, communication, analysis, and marketing purposes. Your data is protected with industry-standard security measures (SSL encryption, firewalls, access controls).",
+    "legal.privacy.p1": "When you visit our website, certain personal and anonymous data is collected to provide you with better service.",
+    "legal.privacy.p2": "Collected data is used for service delivery, communication, analysis, and marketing purposes. Your data is protected with industry-standard security measures.",
     "legal.cookie.title": "3. Cookie Policy",
     "legal.cookie.p1": "Our website uses cookies to enhance user experience, analyze site performance, and deliver personalized content.",
     "legal.cookie.types": "Types of cookies used:",
@@ -589,12 +536,10 @@ export const translations = {
     "legal.cookie.analytics": "Analytics Cookies: Anonymously analyze visitor behavior.",
     "legal.cookie.functional": "Functional Cookies: Remember user settings such as language preference.",
     "legal.cookie.marketing": "Marketing Cookies: Provide a personalized advertising experience.",
-    "legal.cookie.p2": "You can manage your cookie preferences through your browser settings. Disabling mandatory cookies may affect functionality.",
+    "legal.cookie.p2": "You can manage your cookie preferences through your browser settings.",
     "legal.terms.title": "4. Terms of Use",
-    "legal.terms.p1": "By using this website, you are deemed to have fully accepted all the legal terms, disclaimers, and applicable policies stated herein. XND Technology Group and its affiliates reserve the total right to change, update or cancel these terms of use, online services, campaigns or pricing at any time without prior notice.",
-    "legal.terms.p2": "All visual, auditory or written materials (designs, logos, text resources, software, trademarks, interfaces and encodings) on our website or applications are entirely under the intellectual property of XND Technology Group and / or its licensors.",
-    "legal.contact.title": "5. Contact",
-    "legal.contact.p1": "You can reach us through the following channels for any requests and questions regarding your personal data:",
+    "legal.terms.p1": "By using this website, you fully accept all legal terms and disclaimers. XND Technology Group reserves the right to change these terms at any time.",
+    "legal.terms.p2": "All visual, auditory or written materials on our website are under the intellectual property of XND Technology Group.",
 
     // Cookie Consent
     "cookie.message": "This website uses cookies to enhance your experience.",
