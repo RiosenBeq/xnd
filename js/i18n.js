@@ -294,6 +294,112 @@ export const translations = {
     "cookie.link": "Çerez Politikası",
     "cookie.accept": "Kabul Et",
     "cookie.reject": "Reddet",
+
+    // Page meta
+    "page.title": "XND Teknoloji Grubu",
+    "page.meta_desc": "XND Teknoloji Grubu - Tüm teknolojiler, tek bir sistem.",
+    "page.brand": "XND Teknoloji Grubu",
+    "page.tagline": "Tüm teknolojiler, tek bir sistem.",
+
+    // Footer dynamic
+    "footer.brand": "XND Teknoloji Grubu",
+    "footer.tagline": "Tüm teknolojiler, tek bir sistem.",
+    "footer.summary": "XND Teknoloji Grubu, teknolojiyi kurmaz. Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.",
+
+    // Page content — Section 1
+    "page.s1.h": "Entegre Teknolojinin Yeni Standardı",
+    "page.s1.p1": "Teknoloji artık tek başına bir değer değil.",
+    "page.s1.p2": "Gerçek değer, farklı sistemlerin kusursuz bir bütün olarak çalıştığı noktada ortaya çıkar.",
+    "page.s1.p3": "XND Teknoloji Grubu, bu bütünlüğü kurmak için vardır.",
+    "page.s1.p4": "Ses, ışık, görüntü, bilişim altyapıları, network mimarileri ve cihazlar arası haberleşme sistemleri…",
+    "page.s1.p5": "Hepsi tek başına anlamlıdır.",
+    "page.s1.p6": "Ancak birlikte çalıştıklarında gerçek bir deneyime dönüşürler.",
+    "page.s1.p7": "XND, bu dönüşümü tasarlar.",
+
+    // Page content — Section 2
+    "page.s2.h": "Teknolojiye Bakış",
+    "page.s2.p1": "XND için teknoloji;",
+    "page.s2.p2": "ürünlerden, markalardan veya bağımsız sistemlerden ibaret değildir.",
+    "page.s2.p3": "Teknoloji;",
+    "page.s2.p4": "birbirine bağlı, sürekli iletişim halinde olan ve kesintisiz çalışan bir ekosistemdir.",
+    "page.s2.p5": "Bu nedenle XND, hiçbir projeye parça parça yaklaşmaz.",
+    "page.s2.p6": "Her zaman uçtan uca düşünür, tek bir sistem olarak kurgular ve hayata geçirir.",
+
+    // Page content — Section 3
+    "page.s3.h": "Ne Yapar?",
+    "page.s3.p1": "XND Teknoloji Grubu;",
+    "page.s3.p2": "Ses, ışık, görüntü ve bilişim altyapıları dahil olmak üzere tüm teknoloji katmanlarını kapsar, entegre eder ve yönetir.",
+    "page.s3.p3": "Bu kapsamda;",
+    "page.s3.li1": "Profesyonel ses, ışık ve görüntü sistemleri",
+    "page.s3.li2": "Bilişim altyapıları ve IT çözümleri",
+    "page.s3.li3": "Network ve veri iletişim mimarileri",
+    "page.s3.li4": "Cihazlar arası haberleşme ve entegrasyon sistemleri",
+    "page.s3.li5": "Otomasyon ve kontrol altyapıları",
+    "page.s3.p4": "Amaç yalnızca kurulum yapmak değil;",
+    "page.s3.p5": "uzun vadede stabil, sürdürülebilir ve yüksek performanslı çalışan sistemler oluşturmaktır.",
+
+    // Page content — Section 4
+    "page.s4.h": "Nasıl Yapar?",
+    "page.s4.intro1": "XND'nin metodolojisi, sadelik üzerine kuruludur.",
+    "page.s4.intro2": "Ama bu sadelik, yüksek seviyede bir mühendislik yaklaşımının sonucudur.",
+    "page.s4.sub1.h": "1. Anlar",
+    "page.s4.sub1.p1": "Her proje, derin bir analiz ile başlar.",
+    "page.s4.sub1.p2": "Mekânın yapısı, kullanıcı davranışı, operasyonel ihtiyaçlar ve veri akışı değerlendirilir.",
+    "page.s4.sub1.p3": "Çünkü doğru sistem, doğru sorularla başlar.",
+    "page.s4.sub2.h": "2. Tasarlar",
+    "page.s4.sub2.p1": "Tüm sistemler, tek tek değil;",
+    "page.s4.sub2.p2": "uçtan uca bir mimari olarak kurgulanır.",
+    "page.s4.sub2.p3": "Network altyapısından ses sistemine,",
+    "page.s4.sub2.p4": "görüntü çözümlerinden kontrol sistemlerine kadar",
+    "page.s4.sub2.p5": "her bileşen birbiriyle uyumlu olacak şekilde planlanır.",
+    "page.s4.sub3.h": "3. Entegre Eder",
+    "page.s4.sub3.p1": "Farklı teknolojiler, tek bir dilde buluşturulur.",
+    "page.s4.sub3.p2": "Ses, ışık, görüntü, IT ve network altyapıları",
+    "page.s4.sub3.p3": "birbirine bağlı ve senkronize çalışan bir sistem haline gelir.",
+    "page.s4.sub3.p4": "Cihazlar konuşur.",
+    "page.s4.sub3.p5": "Sistemler birlikte çalışır.",
+    "page.s4.sub3.p6": "Kullanıcı ise sadece sonucu deneyimler.",
+    "page.s4.sub4.h": "4. Hayata Geçirir",
+    "page.s4.sub4.p1": "Kurulum, XND için sadece başlangıçtır.",
+    "page.s4.sub4.p2": "Tüm sistemler test edilir, optimize edilir",
+    "page.s4.sub4.p3": "ve maksimum performansla devreye alınır.",
+    "page.s4.sub4.p4": "Her detay, uzun vadeli stabilite için yapılandırılır.",
+    "page.s4.sub5.h": "5. Sürekliliği Sağlar",
+    "page.s4.sub5.p1": "Gerçek kalite, kurulumdan sonra ortaya çıkar.",
+    "page.s4.sub5.p2": "XND, sistemlerin",
+    "page.s4.sub5.p3": "kesintisiz, stabil ve sürdürülebilir şekilde çalışmasını garanti altına alır.",
+    "page.s4.sub5.p4": "Çünkü iyi bir sistem, sadece çalışmaz;",
+    "page.s4.sub5.p5": "her zaman aynı performansla çalışır.",
+
+    // Page content — Section 5
+    "page.s5.h": "Yaklaşım",
+    "page.s5.p1": "XND Teknoloji Grubu, teknolojiyi karmaşıklaştırmaz.",
+    "page.s5.p2": "Onu anlaşılır, yönetilebilir ve kusursuz hale getirir.",
+    "page.s5.p3": "Her projede hedef:",
+    "page.s5.li1": "Minimum karmaşıklık",
+    "page.s5.li2": "Maksimum verim",
+    "page.s5.li3": "Uzun vadeli stabilite",
+
+    // Page content — Section 6
+    "page.s6.h": "Deneyim Odaklı Sistemler",
+    "page.s6.p1": "İyi bir teknoloji görünmezdir.",
+    "page.s6.p2": "Ama etkisi her yerde hissedilir.",
+    "page.s6.p3": "Bir mekâna girildiğinde;",
+    "page.s6.p4": "sesin dengesi, ışığın atmosferi, ekranların akışı…",
+    "page.s6.p5": "Hiçbiri dikkat çekmez.",
+    "page.s6.p6": "Çünkü hepsi doğru çalışır.",
+    "page.s6.p7": "İşte bu, XND'nin imzasıdır.",
+
+    // Page content — Section 7
+    "page.s7.h": "Gelecek Vizyonu",
+    "page.s7.p1": "Gelecek, daha fazla teknoloji değil;",
+    "page.s7.p2": "daha doğru entegre edilmiş teknoloji gerektirir.",
+    "page.s7.p3": "XND Teknoloji Grubu,",
+    "page.s7.p4": "farklı sistemleri bir araya getiren değil,",
+    "page.s7.p5": "onları tek bir akıllı yapı haline getiren bir yaklaşım inşa eder.",
+    "page.s7.p6": "XND Teknoloji Grubu,",
+    "page.s7.p7": "teknolojiyi kurmaz.",
+    "page.s7.p8": "Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.",
   },
   en: {
     // Navbar
@@ -593,6 +699,112 @@ export const translations = {
     "cookie.link": "Cookie Policy",
     "cookie.accept": "Accept",
     "cookie.reject": "Decline",
+
+    // Page meta
+    "page.title": "XND Technology Group",
+    "page.meta_desc": "XND Technology Group - All technologies, one single system.",
+    "page.brand": "XND Technology Group",
+    "page.tagline": "All technologies, one single system.",
+
+    // Footer dynamic
+    "footer.brand": "XND Technology Group",
+    "footer.tagline": "All technologies, one single system.",
+    "footer.summary": "XND Technology Group does not just install technology. It connects, integrates, and runs it flawlessly.",
+
+    // Page content — Section 1
+    "page.s1.h": "The New Standard of Integrated Technology",
+    "page.s1.p1": "Technology alone is no longer a value on its own.",
+    "page.s1.p2": "Real value emerges where different systems work together as a flawless whole.",
+    "page.s1.p3": "XND Technology Group exists to build that integrity.",
+    "page.s1.p4": "Audio, lighting, video, IT infrastructures, network architectures, and inter-device communication systems…",
+    "page.s1.p5": "Each one is meaningful on its own.",
+    "page.s1.p6": "But when they work together, they turn into a true experience.",
+    "page.s1.p7": "XND designs that transformation.",
+
+    // Page content — Section 2
+    "page.s2.h": "Perspective on Technology",
+    "page.s2.p1": "For XND, technology",
+    "page.s2.p2": "is not merely a collection of products, brands, or independent systems.",
+    "page.s2.p3": "Technology",
+    "page.s2.p4": "is an interconnected ecosystem in constant communication that runs without interruption.",
+    "page.s2.p5": "That is why XND never approaches any project in fragments.",
+    "page.s2.p6": "It always thinks end-to-end, designs as a single system, and brings it to life.",
+
+    // Page content — Section 3
+    "page.s3.h": "What Does It Do?",
+    "page.s3.p1": "XND Technology Group",
+    "page.s3.p2": "covers, integrates, and manages all technology layers including audio, lighting, video, and IT infrastructures.",
+    "page.s3.p3": "Within this scope:",
+    "page.s3.li1": "Professional audio, lighting, and video systems",
+    "page.s3.li2": "IT infrastructures and IT solutions",
+    "page.s3.li3": "Network and data communication architectures",
+    "page.s3.li4": "Inter-device communication and integration systems",
+    "page.s3.li5": "Automation and control infrastructures",
+    "page.s3.p4": "The goal is not just to deliver an installation;",
+    "page.s3.p5": "it is to build systems that run stably, sustainably, and at high performance over the long term.",
+
+    // Page content — Section 4
+    "page.s4.h": "How Does It Do It?",
+    "page.s4.intro1": "XND's methodology is built on simplicity.",
+    "page.s4.intro2": "But that simplicity is the result of a high-level engineering approach.",
+    "page.s4.sub1.h": "1. Understand",
+    "page.s4.sub1.p1": "Every project begins with deep analysis.",
+    "page.s4.sub1.p2": "The structure of the space, user behavior, operational needs, and data flow are all evaluated.",
+    "page.s4.sub1.p3": "Because the right system starts with the right questions.",
+    "page.s4.sub2.h": "2. Design",
+    "page.s4.sub2.p1": "All systems are not designed one by one;",
+    "page.s4.sub2.p2": "they are designed as a single end-to-end architecture.",
+    "page.s4.sub2.p3": "From network infrastructure to audio systems,",
+    "page.s4.sub2.p4": "from video solutions to control systems,",
+    "page.s4.sub2.p5": "every component is planned to work in harmony with the others.",
+    "page.s4.sub3.h": "3. Integrate",
+    "page.s4.sub3.p1": "Different technologies are brought together in a single language.",
+    "page.s4.sub3.p2": "Audio, lighting, video, IT, and network infrastructures",
+    "page.s4.sub3.p3": "become a single, interconnected, and synchronized system.",
+    "page.s4.sub3.p4": "Devices speak to each other.",
+    "page.s4.sub3.p5": "Systems work together.",
+    "page.s4.sub3.p6": "And the user only experiences the result.",
+    "page.s4.sub4.h": "4. Bring to Life",
+    "page.s4.sub4.p1": "For XND, installation is only the beginning.",
+    "page.s4.sub4.p2": "All systems are tested, optimized,",
+    "page.s4.sub4.p3": "and put into operation at maximum performance.",
+    "page.s4.sub4.p4": "Every detail is configured for long-term stability.",
+    "page.s4.sub5.h": "5. Ensure Continuity",
+    "page.s4.sub5.p1": "Real quality emerges after the installation is complete.",
+    "page.s4.sub5.p2": "XND guarantees that systems",
+    "page.s4.sub5.p3": "run uninterrupted, stable, and sustainable.",
+    "page.s4.sub5.p4": "Because a good system doesn't just work;",
+    "page.s4.sub5.p5": "it always works at the same level of performance.",
+
+    // Page content — Section 5
+    "page.s5.h": "Approach",
+    "page.s5.p1": "XND Technology Group does not make technology complicated.",
+    "page.s5.p2": "It makes it understandable, manageable, and flawless.",
+    "page.s5.p3": "The goal in every project:",
+    "page.s5.li1": "Minimum complexity",
+    "page.s5.li2": "Maximum efficiency",
+    "page.s5.li3": "Long-term stability",
+
+    // Page content — Section 6
+    "page.s6.h": "Experience-Driven Systems",
+    "page.s6.p1": "Good technology is invisible.",
+    "page.s6.p2": "But its effect is felt everywhere.",
+    "page.s6.p3": "When you walk into a space,",
+    "page.s6.p4": "the balance of sound, the atmosphere of light, the flow of the screens…",
+    "page.s6.p5": "None of them call attention to themselves.",
+    "page.s6.p6": "Because they all work correctly.",
+    "page.s6.p7": "That is the signature of XND.",
+
+    // Page content — Section 7
+    "page.s7.h": "Future Vision",
+    "page.s7.p1": "The future does not require more technology;",
+    "page.s7.p2": "it requires more correctly integrated technology.",
+    "page.s7.p3": "XND Technology Group",
+    "page.s7.p4": "does not just bring different systems together;",
+    "page.s7.p5": "it builds an approach that turns them into a single intelligent structure.",
+    "page.s7.p6": "XND Technology Group",
+    "page.s7.p7": "does not just install technology.",
+    "page.s7.p8": "It connects, integrates, and runs it flawlessly.",
   }
 };
 
@@ -600,19 +812,25 @@ export function setLanguage(lang) {
   if (lang !== 'tr' && lang !== 'en') lang = 'tr';
   localStorage.setItem('xnd_lang', lang);
   document.documentElement.lang = lang;
-  
+
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        if (el.hasAttribute('placeholder')) {
-           el.placeholder = translations[lang][key];
-        } else {
-           el.value = translations[lang][key];
-        }
+    const value = translations[lang]?.[key];
+    if (value === undefined) return;
+
+    const attr = el.getAttribute('data-i18n-attr');
+    if (attr) {
+      el.setAttribute(attr, value);
+    } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      if (el.hasAttribute('placeholder')) {
+        el.placeholder = value;
       } else {
-        el.innerHTML = translations[lang][key];
+        el.value = value;
       }
+    } else if (el.tagName === 'TITLE') {
+      document.title = value;
+    } else {
+      el.innerHTML = value;
     }
   });
 
