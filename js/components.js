@@ -133,13 +133,16 @@ export function renderFooter() {
   const footerContainer = document.getElementById('footer');
   if (!footerContainer) return;
 
+  const lang = getCurrentLanguage();
+  const t = translations[lang];
+
   footerContainer.innerHTML = `
     <footer class="relative w-full border-t border-white/[0.08] bg-[#040810] pb-20 md:pb-0">
       <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16">
-        <h3 class="text-2xl md:text-4xl font-black text-white mb-4">XND Teknoloji Grubu</h3>
-        <p class="text-primary font-bold mb-4">Tüm teknolojiler, tek bir sistem.</p>
-        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed max-w-3xl">
-          XND Teknoloji Grubu, teknolojiyi kurmaz. Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.
+        <h3 data-i18n="footer.brand" class="text-2xl md:text-4xl font-black text-white mb-4">${t['footer.brand']}</h3>
+        <p data-i18n="footer.tagline" class="text-primary font-bold mb-4">${t['footer.tagline']}</p>
+        <p data-i18n="footer.summary" class="text-on-surface-variant text-sm md:text-base leading-relaxed max-w-3xl">
+          ${t['footer.summary']}
         </p>
       </div>
     </footer>
