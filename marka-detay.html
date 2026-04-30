@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html class="dark" lang="tr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-  <title data-i18n="page.title">XND Teknoloji Grubu</title>
-  <meta name="description" data-i18n="page.meta_desc" data-i18n-attr="content" content="XND Teknoloji Grubu - Tüm teknolojiler, tek bir sistem." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080c14" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Primary SEO -->
+  <title data-i18n="page.title.brands">Markalarımız | XND Teknoloji Grubu Ekosistemi</title>
+  <meta name="description" data-i18n="page.meta_desc.brands" data-i18n-attr="content" content="Click NOW Digital, On Müzik, Tıkla Hemen Al, XND Tek, NextGenLab, NextGenBox, On Müzik Proje ve Alpenga — XND Teknoloji Grubu'nun marka ekosistemi." />
+  <meta name="author" content="XND Teknoloji Grubu" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://xnd.com.tr/marka-detay.html" />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="tr-TR" href="https://xnd.com.tr/marka-detay.html" />
+  <link rel="alternate" hreflang="en" href="https://xnd.com.tr/marka-detay.html?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://xnd.com.tr/marka-detay.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="XND Teknoloji Grubu" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Markalarımız | XND Teknoloji Grubu Ekosistemi" />
+  <meta property="og:description" content="Click NOW Digital, On Müzik, Tıkla Hemen Al, XND Tek, NextGenLab, NextGenBox, On Müzik Proje ve Alpenga — XND Teknoloji Grubu'nun marka ekosistemi." />
+  <meta property="og:url" content="https://xnd.com.tr/marka-detay.html" />
+  <meta property="og:image" content="https://xnd.com.tr/hero_bg.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="XND Teknoloji Grubu" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Markalarımız | XND Teknoloji Grubu Ekosistemi" />
+  <meta name="twitter:description" content="Click NOW Digital, On Müzik, Tıkla Hemen Al, XND Tek, NextGenLab, NextGenBox, On Müzik Proje ve Alpenga — XND Teknoloji Grubu'nun marka ekosistemi." />
+  <meta name="twitter:image" content="https://xnd.com.tr/hero_bg.png" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <!-- Preconnect / Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="/header_logo.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary/30 relative">
@@ -255,11 +296,15 @@
 
   <div id="footer"></div>
 
-  <script type="module">
-    import { renderNavbar, renderFooter } from './js/components.js';
+    <script type="module">
+    import { renderNavbar, renderFooter, renderCookieConsent } from './js/components.js';
     import { initLanguage } from './js/i18n.js';
+    import { renderBaseSchema, renderBreadcrumb } from './js/seo.js';
     renderNavbar('brands');
     renderFooter();
+    renderBaseSchema();
+    renderBreadcrumb([{ name: 'Anasayfa', url: '/' }, { name: 'Markalar', url: '/marka-detay.html' }]);
+    renderCookieConsent();
     initLanguage();
   </script>
 </body>
