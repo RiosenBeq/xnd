@@ -298,6 +298,28 @@ export const translations = {
     // Page meta
     "page.title": "XND Teknoloji Grubu",
     "page.meta_desc": "XND Teknoloji Grubu - Tüm teknolojiler, tek bir sistem.",
+    "page.title.home": "XND Teknoloji Grubu | Uçtan Uca Entegre Teknoloji Çözümleri",
+    "page.title.about": "Hakkımızda | XND Teknoloji Grubu",
+    "page.title.services": "Hizmetler | Profesyonel AV, IT ve Sistem Entegrasyonu | XND",
+    "page.title.brands": "Markalarımız | XND Teknoloji Grubu Ekosistemi",
+    "page.title.news": "Basın Odası | XND Teknoloji Grubu Haberler",
+    "page.title.news_detail": "XND Teknoloji, Yeni Veri Merkezi Yatırımını Duyurdu | XND Basın Odası",
+    "page.title.contact": "İletişim | XND Teknoloji Grubu",
+    "page.title.career": "Kariyer | Açık Pozisyonlar | XND Teknoloji Grubu",
+    "page.title.investors": "Yatırımcı İlişkileri | XND Teknoloji Grubu",
+    "page.title.legal": "Yasal Bildirimler · Gizlilik & Şartlar | XND Teknoloji Grubu",
+    "page.title.kvkk": "KVKK Aydınlatma Metni | XND Teknoloji Grubu",
+    "page.meta_desc.home": "XND Teknoloji Grubu; profesyonel ses, ışık, görüntü, IT ve network altyapılarını tek bir ekosistem olarak tasarlayan, kuran ve yöneten kurumsal teknoloji grubudur.",
+    "page.meta_desc.about": "XND Teknoloji Grubu hikayesi, misyonu, vizyonu ve değerleri. Profesyonel ses, ışık, görüntü ve bilişim altyapılarını uçtan uca entegre eden kurumsal teknoloji grubu.",
+    "page.meta_desc.services": "Profesyonel ses, ışık, görüntü, IT altyapısı, network mimarisi ve otomasyon çözümleri. XND Teknoloji Grubu uçtan uca sistem entegrasyonu hizmetleri.",
+    "page.meta_desc.brands": "Click NOW Digital, On Müzik, Tıkla Hemen Al, XND Tek, NextGenLab, NextGenBox, On Müzik Proje ve Alpenga — XND Teknoloji Grubu'nun marka ekosistemi.",
+    "page.meta_desc.news": "XND Teknoloji Grubu ve bünyesindeki markaların en güncel haberleri, basın bültenleri ve kurumsal duyuruları.",
+    "page.meta_desc.news_detail": "XND Teknoloji Grubu, İstanbul Silivri'de 50 milyon dolarlık çevre dostu (Yeşil Veri Merkezi) yatırımını duyurdu. Proje 2027'nin ilk çeyreğinde tamamlanacak.",
+    "page.meta_desc.contact": "XND Teknoloji Grubu ile iletişime geçin. Maltepe/İstanbul merkez ofisimiz, telefon, e-posta ve proje talep formu için tüm iletişim kanalları.",
+    "page.meta_desc.career": "XND Teknoloji Grubu kariyer sayfası. Açık pozisyonlar, çalışan değerleri ve iş başvurusu. Geleceği birlikte inşa edelim.",
+    "page.meta_desc.investors": "XND Teknoloji Grubu yatırımcı ilişkileri sayfası. Finansal raporlar, kurumsal yönetim ilkeleri ve büyüme vizyonu.",
+    "page.meta_desc.legal": "XND Teknoloji Grubu gizlilik politikası, kullanım koşulları, çerez politikası ve yasal bildirimler.",
+    "page.meta_desc.kvkk": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında XND Teknoloji Grubu aydınlatma metni.",
     "page.brand": "XND Teknoloji Grubu",
     "page.tagline": "Tüm teknolojiler, tek bir sistem.",
 
@@ -703,6 +725,28 @@ export const translations = {
     // Page meta
     "page.title": "XND Technology Group",
     "page.meta_desc": "XND Technology Group - All technologies, one single system.",
+    "page.title.home": "XND Technology Group | End-to-End Integrated Technology Solutions",
+    "page.title.about": "About | XND Technology Group",
+    "page.title.services": "Services | Professional AV, IT and System Integration | XND",
+    "page.title.brands": "Our Brands | XND Technology Group Ecosystem",
+    "page.title.news": "Press Room | XND Technology Group News",
+    "page.title.news_detail": "XND Technology Announces New Data Center Investment | XND Press Room",
+    "page.title.contact": "Contact | XND Technology Group",
+    "page.title.career": "Careers | Open Positions | XND Technology Group",
+    "page.title.investors": "Investor Relations | XND Technology Group",
+    "page.title.legal": "Legal Notices · Privacy & Terms | XND Technology Group",
+    "page.title.kvkk": "Personal Data Protection Notice (KVKK) | XND Technology Group",
+    "page.meta_desc.home": "XND Technology Group designs, builds, and operates professional audio, lighting, video, IT, and network infrastructures as a single integrated ecosystem.",
+    "page.meta_desc.about": "The story, mission, vision, and values of XND Technology Group — a corporate technology group integrating professional audio, lighting, video, and IT infrastructures end-to-end.",
+    "page.meta_desc.services": "Professional audio, lighting, video, IT infrastructure, network architecture, and automation solutions. End-to-end system integration services from XND Technology Group.",
+    "page.meta_desc.brands": "Click NOW Digital, On Müzik, Tıkla Hemen Al, XND Tek, NextGenLab, NextGenBox, On Müzik Proje, and Alpenga — the brand ecosystem of XND Technology Group.",
+    "page.meta_desc.news": "Latest news, press releases, and corporate announcements from XND Technology Group and its member brands.",
+    "page.meta_desc.news_detail": "XND Technology Group has announced a 50 million dollar eco-friendly Green Data Center investment in Silivri, Istanbul. The project will be completed in Q1 2027.",
+    "page.meta_desc.contact": "Get in touch with XND Technology Group. All contact channels including our headquarters in Maltepe/Istanbul, phone, email, and a project request form.",
+    "page.meta_desc.career": "XND Technology Group careers page. Open positions, employee values, and how to apply. Let's build the future together.",
+    "page.meta_desc.investors": "XND Technology Group investor relations page. Financial reports, corporate governance principles, and growth vision.",
+    "page.meta_desc.legal": "XND Technology Group privacy policy, terms of use, cookie policy, and legal notices.",
+    "page.meta_desc.kvkk": "XND Technology Group's personal data protection notice within the scope of Turkey's Personal Data Protection Law No. 6698 (KVKK).",
     "page.brand": "XND Technology Group",
     "page.tagline": "All technologies, one single system.",
 
@@ -838,7 +882,8 @@ export function setLanguage(lang) {
 }
 
 export function initLanguage() {
-  const savedLang = localStorage.getItem('xnd_lang') || 'tr';
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  const savedLang = urlLang || localStorage.getItem('xnd_lang') || 'tr';
   setLanguage(savedLang);
 }
 
