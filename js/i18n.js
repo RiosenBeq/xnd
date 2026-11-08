@@ -41,7 +41,7 @@ function snapshotOriginals() {
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     if (originals.has(el)) return;
     const attr = el.getAttribute('data-i18n-attr');
-    originals.set(el, attr ? el.getAttribute(attr) : el.innerHTML);
+    originals.set(el, attr ? el.getAttribute(attr) : el.tagName === 'TITLE' ? el.textContent : el.innerHTML);
   });
 }
 

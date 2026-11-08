@@ -497,7 +497,7 @@
   }
 
   .prose-xnd h2 {
-    @apply mt-12 scroll-mt-28 font-display text-2xl font-bold text-foreground;
+    @apply mt-12 scroll-mt-4 font-display text-2xl font-bold text-foreground;
   }
 
   .prose-xnd h3 {

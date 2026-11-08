@@ -18,7 +18,7 @@ const keysIn = (html) => [...html.matchAll(/data-i18n="([^"]+)"/g)].map((m) => m
 const partial = (name) => fs.readFileSync(path.join(root, 'partials', `${name}.html`), 'utf8');
 
 let failed = false;
-for (const file of fs.readdirSync(root).filter((f) => f.endsWith('.html') && !f.startsWith('google'))) {
+for (const file of fs.readdirSync(root).filter((f) => f.endsWith('.html'))) {
   let html = fs.readFileSync(path.join(root, file), 'utf8');
   html = html.replace(/<!--\s*@include\s+([\w-]+)\s*-->/g, (_, n) => partial(n));
   const page = (html.match(/<body[^>]*\sdata-page="([^"]+)"/) || [])[1];

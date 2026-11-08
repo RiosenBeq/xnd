@@ -80,13 +80,15 @@
 
     <!-- ═══ Reports + contact ═══ -->
     <section class="section border-y bg-muted" aria-labelledby="reports-title">
-      <div class="container grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-14">
-        <div data-reveal>
+      <div class="container">
+        <div class="max-w-2xl" data-reveal>
           <p class="eyebrow" data-i18n="investors.reports.eyebrow">Raporlar</p>
           <h2 id="reports-title" class="section-title mt-4" data-i18n="investors.reports.title">Finansal raporlar</h2>
           <p class="section-lead" data-i18n="investors.reports.lead">Şeffaflık ilkemiz gereği faaliyet raporlarımız ve kurumsal yönetim belgelerimiz, yatırımcı ilişkileri birimimize iletilen talepler doğrultusunda paylaşılmaktadır.</p>
+        </div>
 
-          <ul class="card mt-10 divide-y">
+        <div class="mt-10 grid items-start gap-6 lg:grid-cols-[1.5fr_1fr] lg:gap-10">
+          <ul class="card divide-y" data-reveal>
             <li class="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
               <div class="flex items-center gap-4">
                 <span class="icon-tile"><i data-lucide="file-text"></i></span>
@@ -127,9 +129,8 @@
               </a>
             </li>
           </ul>
-        </div>
 
-        <aside class="space-y-5 lg:pt-[7.5rem]" data-reveal style="--reveal-delay: 120ms">
+          <aside class="space-y-5" data-reveal style="--reveal-delay: 120ms">
           <div class="relative isolate overflow-hidden rounded-xl bg-navy p-7 text-navy-foreground">
             <div class="bg-grid-navy mask-radial absolute inset-0 -z-10" aria-hidden="true"></div>
             <span class="icon-tile-inverse"><i data-lucide="handshake"></i></span>
@@ -148,7 +149,8 @@
             </div>
             <i data-lucide="arrow-right" class="size-4 text-primary transition-transform group-hover:translate-x-0.5"></i>
           </a>
-        </aside>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
