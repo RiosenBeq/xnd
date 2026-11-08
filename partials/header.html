@@ -1,0 +1,82 @@
+  <!-- Site header (partials/header.html) -->
+  <a href="#main" class="skip-link" data-i18n="a11y.skip">İçeriğe geç</a>
+  <div class="brand-bar" aria-hidden="true"></div>
+  <header id="site-header" class="sticky top-0 z-50 border-b border-transparent bg-background/90 backdrop-blur-md transition-[border-color,box-shadow] duration-200 supports-[backdrop-filter]:bg-background/80">
+    <div class="container flex h-16 items-center justify-between gap-6 lg:h-[76px]">
+      <a href="/" class="flex shrink-0 items-center gap-3" aria-label="XND Teknoloji Grubu" data-i18n="a11y.home" data-i18n-attr="aria-label">
+        <img src="/brand/xnd.png" alt="" width="400" height="121" class="h-8 w-auto lg:h-9" />
+        <span class="hidden border-l pl-3 font-display text-[13px] font-semibold leading-tight text-foreground sm:block" data-i18n="brand.group">Teknoloji<br />Grubu</span>
+      </a>
+
+      <nav class="hidden items-center gap-1 lg:flex" aria-label="Ana menü" data-i18n="a11y.mainnav" data-i18n-attr="aria-label">
+        <div class="relative" data-dropdown>
+          <button type="button" class="nav-link" aria-expanded="false" aria-controls="menu-corporate" data-nav-group="corporate">
+            <span data-i18n="nav.corporate">Kurumsal</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div id="menu-corporate" class="dropdown-panel" hidden>
+            <a href="/hakkimizda" class="dropdown-link" data-nav="about">
+              <span class="icon-tile size-9"><i data-lucide="building-2" class="size-[18px]"></i></span>
+              <span>
+                <span class="block text-sm font-semibold text-foreground" data-i18n="nav.about">Hakkımızda</span>
+                <span class="mt-0.5 block text-[13px] leading-snug text-muted-foreground" data-i18n="nav.about.desc">Yaklaşımımız, misyonumuz ve vizyonumuz</span>
+              </span>
+            </a>
+            <a href="/yatirimci-iliskileri" class="dropdown-link" data-nav="investors">
+              <span class="icon-tile size-9"><i data-lucide="trending-up" class="size-[18px]"></i></span>
+              <span>
+                <span class="block text-sm font-semibold text-foreground" data-i18n="nav.investors">Yatırımcı İlişkileri</span>
+                <span class="mt-0.5 block text-[13px] leading-snug text-muted-foreground" data-i18n="nav.investors.desc">Büyüme stratejisi ve kurumsal yönetim</span>
+              </span>
+            </a>
+            <a href="/kariyer" class="dropdown-link" data-nav="career">
+              <span class="icon-tile size-9"><i data-lucide="briefcase" class="size-[18px]"></i></span>
+              <span>
+                <span class="block text-sm font-semibold text-foreground" data-i18n="nav.career">Kariyer</span>
+                <span class="mt-0.5 block text-[13px] leading-snug text-muted-foreground" data-i18n="nav.career.desc">Açık pozisyonlar ve başvuru</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a href="/hizmetler" class="nav-link" data-nav="services" data-i18n="nav.services">Hizmetler</a>
+        <a href="/marka-detay" class="nav-link" data-nav="brands" data-i18n="nav.brands">Markalarımız</a>
+        <a href="/basin-odasi" class="nav-link" data-nav="news" data-i18n="nav.news">Basın Odası</a>
+        <a href="/iletisim" class="nav-link" data-nav="contact" data-i18n="nav.contact">İletişim</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button type="button" class="btn btn-ghost btn-sm gap-1.5 px-2.5" data-lang-toggle aria-label="Switch to English">
+          <i data-lucide="globe"></i>
+          <span data-lang-label>EN</span>
+        </button>
+        <a href="/iletisim" class="btn btn-primary btn-sm hidden sm:inline-flex" data-i18n="nav.cta">Teklif Alın</a>
+        <button type="button" class="btn btn-outline btn-icon lg:hidden" aria-controls="mobile-menu" aria-expanded="false" data-sheet-open aria-label="Menüyü aç" data-i18n="a11y.openmenu" data-i18n-attr="aria-label">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <dialog id="mobile-menu" class="sheet" aria-label="Menü" data-i18n="a11y.menu" data-i18n-attr="aria-label">
+    <div class="flex h-16 items-center justify-between border-b px-4">
+      <img src="/brand/xnd.png" alt="XND" width="400" height="121" class="h-7 w-auto" />
+      <button type="button" class="btn btn-ghost btn-icon" data-sheet-close aria-label="Menüyü kapat" data-i18n="a11y.closemenu" data-i18n-attr="aria-label">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="flex-1 overflow-y-auto p-3" aria-label="Mobil menü" data-i18n="a11y.mobilenav" data-i18n-attr="aria-label">
+      <a href="/" class="sheet-link" data-nav="home"><span data-i18n="nav.home">Anasayfa</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/hizmetler" class="sheet-link" data-nav="services"><span data-i18n="nav.services">Hizmetler</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/marka-detay" class="sheet-link" data-nav="brands"><span data-i18n="nav.brands">Markalarımız</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/basin-odasi" class="sheet-link" data-nav="news"><span data-i18n="nav.news">Basın Odası</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/iletisim" class="sheet-link" data-nav="contact"><span data-i18n="nav.contact">İletişim</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <p class="px-3 pb-1 pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground" data-i18n="nav.corporate">Kurumsal</p>
+      <a href="/hakkimizda" class="sheet-link" data-nav="about"><span data-i18n="nav.about">Hakkımızda</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/yatirimci-iliskileri" class="sheet-link" data-nav="investors"><span data-i18n="nav.investors">Yatırımcı İlişkileri</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+      <a href="/kariyer" class="sheet-link" data-nav="career"><span data-i18n="nav.career">Kariyer</span><i data-lucide="chevron-right" class="size-4 text-muted-foreground"></i></a>
+    </nav>
+    <div class="space-y-3 border-t p-4">
+      <a href="/iletisim" class="btn btn-primary w-full" data-i18n="nav.cta">Teklif Alın</a>
+      <a href="tel:+908502419575" class="btn btn-outline w-full"><i data-lucide="phone"></i><span>+90 850 241 95 75</span></a>
+    </div>
+  </dialog>

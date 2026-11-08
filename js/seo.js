@@ -1,11 +1,11 @@
 /**
- * XND Teknoloji Grubu — Shared JSON-LD structured data
- * Injects Organization + WebSite + (optional) Breadcrumb on every page.
+ * XND Teknoloji Grubu — JSON-LD structured data
+ * Organization + WebSite on every page, BreadcrumbList per page, and
+ * page-specific schemas (Service list + FAQ on /hizmetler, NewsArticle on /haber-detay).
  */
 
 const SITE_URL = 'https://xnd.com.tr';
 const ORG_NAME = 'XND Teknoloji Grubu';
-const ORG_LOGO = `${SITE_URL}/header_logo.png`;
 
 const ORG_SCHEMA = {
   '@context': 'https://schema.org',
@@ -14,15 +14,10 @@ const ORG_SCHEMA = {
   name: ORG_NAME,
   alternateName: 'XND Technology Group',
   url: SITE_URL,
-  logo: {
-    '@type': 'ImageObject',
-    url: ORG_LOGO,
-    width: 512,
-    height: 512,
-  },
+  logo: { '@type': 'ImageObject', url: `${SITE_URL}/brand/xnd.png`, width: 400, height: 121 },
   description:
-    'XND Teknoloji Grubu; ses, ışık, görüntü, IT ve network altyapılarını uçtan uca entegre eden kurumsal teknoloji grubudur.',
-  foundingDate: '2018',
+    'XND Teknoloji Grubu; profesyonel ses, ışık, görüntü, IT ve network altyapılarını uçtan uca entegre eden kurumsal teknoloji grubudur.',
+  slogan: 'Tüm teknolojiler, tek bir sistem.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Cevizli Mah. Tugayyolu Cad. No:69C Piazza AVM',
@@ -35,41 +30,31 @@ const ORG_SCHEMA = {
     {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      email: 'info@xnd.com.tr',
-      areaServed: ['TR', 'EU', 'ME'],
-      availableLanguage: ['Turkish', 'English'],
-    },
-    {
-      '@type': 'ContactPoint',
-      contactType: 'sales',
-      email: 'sales@xnd.com.tr',
+      telephone: '+90-850-241-95-75',
+      email: 'iletisim@xnd.com.tr',
       areaServed: 'TR',
       availableLanguage: ['Turkish', 'English'],
     },
   ],
-  sameAs: [
-    'https://www.linkedin.com/company/xnd-teknoloji',
-    'https://www.instagram.com/xndteknoloji',
-  ],
+  sameAs: ['https://www.instagram.com/xndteknolojigrubu/'],
   knowsAbout: [
     'Profesyonel Ses Sistemleri',
-    'Profesyonel Işık Sistemleri',
-    'Görüntü ve LED Çözümleri',
+    'Işık ve Sahne Sistemleri',
+    'Görüntü ve LED Ekran Sistemleri',
     'Bilişim Altyapısı',
     'Network Mimarisi',
-    'IoT Entegrasyonu',
-    'Endüstriyel Otomasyon',
+    'Sistem Entegrasyonu ve Otomasyon',
   ],
   subOrganization: [
-    { '@type': 'Organization', name: 'Click NOW Digital' },
-    { '@type': 'Organization', name: 'On Müzik' },
-    { '@type': 'Organization', name: 'Tıkla Hemen Al' },
-    { '@type': 'Organization', name: 'XND Tek' },
-    { '@type': 'Organization', name: 'NextGenLab' },
-    { '@type': 'Organization', name: 'NextGenBox' },
-    { '@type': 'Organization', name: 'On Müzik Proje' },
-    { '@type': 'Organization', name: 'Alpenga' },
-  ],
+    'Click NOW Digital',
+    'On Müzik',
+    'Tıkla Hemen Al',
+    'XND Teknoloji',
+    'NextGenLab',
+    'NextGenBox',
+    'On Müzik Proje',
+    'Alpenga',
+  ].map((name) => ({ '@type': 'Organization', name })),
 };
 
 const WEBSITE_SCHEMA = {
@@ -78,13 +63,27 @@ const WEBSITE_SCHEMA = {
   '@id': `${SITE_URL}/#website`,
   url: SITE_URL,
   name: ORG_NAME,
-  inLanguage: 'tr-TR',
+  inLanguage: ['tr-TR', 'en'],
   publisher: { '@id': `${SITE_URL}/#organization` },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_URL}/?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
+};
+
+const HOME = { name: 'Anasayfa', url: '/' };
+const BREADCRUMBS = {
+  home: [HOME],
+  about: [HOME, { name: 'Hakkımızda', url: '/hakkimizda' }],
+  services: [HOME, { name: 'Hizmetler', url: '/hizmetler' }],
+  brands: [HOME, { name: 'Markalarımız', url: '/marka-detay' }],
+  news: [HOME, { name: 'Basın Odası', url: '/basin-odasi' }],
+  'news-detail': [
+    HOME,
+    { name: 'Basın Odası', url: '/basin-odasi' },
+    { name: 'XND Teknoloji, Yeni Veri Merkezi Yatırımını Duyurdu', url: '/haber-detay' },
+  ],
+  contact: [HOME, { name: 'İletişim', url: '/iletisim' }],
+  career: [HOME, { name: 'Kariyer', url: '/kariyer' }],
+  investors: [HOME, { name: 'Yatırımcı İlişkileri', url: '/yatirimci-iliskileri' }],
+  legal: [HOME, { name: 'Yasal Bilgiler', url: '/yasal' }],
+  kvkk: [HOME, { name: 'NextGenBox KVKK', url: '/kvkk' }],
 };
 
 function inject(schema, id) {
@@ -96,72 +95,69 @@ function inject(schema, id) {
   document.head.appendChild(script);
 }
 
-export function renderBaseSchema() {
-  inject(ORG_SCHEMA, 'jsonld-organization');
-  inject(WEBSITE_SCHEMA, 'jsonld-website');
-}
-
-export function renderBreadcrumb(items = []) {
-  if (!items.length) return;
-  const schema = {
+function breadcrumbSchema(items) {
+  return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: items.map((it, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name: it.name,
-      item: it.url.startsWith('http') ? it.url : `${SITE_URL}${it.url}`,
+      item: `${SITE_URL}${it.url}`,
     })),
   };
-  inject(schema, 'jsonld-breadcrumb');
 }
 
-export function renderArticleSchema(article) {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'NewsArticle',
-    headline: article.title,
-    description: article.description,
-    datePublished: article.date,
-    dateModified: article.modified || article.date,
-    author: { '@type': 'Organization', name: ORG_NAME },
-    publisher: { '@id': `${SITE_URL}/#organization` },
-    image: article.image || `${SITE_URL}/hero_bg.png`,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': article.url },
-  };
-  inject(schema, 'jsonld-article');
+/** Builds Service ItemList from elements marked [data-service] (title + description). */
+function serviceSchema() {
+  const items = [...document.querySelectorAll('[data-service]')].map((el, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Service',
+      name: el.querySelector('[data-service-name]')?.textContent.trim(),
+      description: el.querySelector('[data-service-desc]')?.textContent.trim(),
+      provider: { '@id': `${SITE_URL}/#organization` },
+      areaServed: 'TR',
+    },
+  }));
+  return items.length ? { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items } : null;
 }
 
-export function renderServiceSchema(services = []) {
-  if (!services.length) return;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    itemListElement: services.map((s, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
-        '@type': 'Service',
-        name: s.name,
-        description: s.description,
-        provider: { '@id': `${SITE_URL}/#organization` },
-        areaServed: 'TR',
-      },
-    })),
-  };
-  inject(schema, 'jsonld-services');
+/** Builds FAQPage from <details data-faq> elements (summary = question). */
+function faqSchema() {
+  const items = [...document.querySelectorAll('[data-faq]')].map((el) => ({
+    '@type': 'Question',
+    name: el.querySelector('summary')?.textContent.trim(),
+    acceptedAnswer: { '@type': 'Answer', text: el.querySelector('[data-faq-answer]')?.textContent.trim() },
+  }));
+  return items.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items } : null;
 }
 
-export function renderFAQSchema(faqs = []) {
-  if (!faqs.length) return;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((q) => ({
-      '@type': 'Question',
-      name: q.q,
-      acceptedAnswer: { '@type': 'Answer', text: q.a },
-    })),
-  };
-  inject(schema, 'jsonld-faq');
+const ARTICLE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: 'XND Teknoloji, Yeni Veri Merkezi Yatırımını Duyurdu',
+  description:
+    "XND Teknoloji Grubu, İstanbul Silivri'de çevre dostu bir veri merkezi yatırımına başladığını duyurdu. Projenin 2027'nin ilk çeyreğinde tamamlanması öngörülüyor.",
+  datePublished: '2026-03-24',
+  dateModified: '2026-03-24',
+  inLanguage: 'tr-TR',
+  author: { '@type': 'Organization', name: ORG_NAME },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  image: `${SITE_URL}/images/network-corridor.webp`,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/haber-detay` },
+};
+
+export function renderSchemas(page) {
+  inject(ORG_SCHEMA, 'jsonld-organization');
+  inject(WEBSITE_SCHEMA, 'jsonld-website');
+  if (BREADCRUMBS[page]) inject(breadcrumbSchema(BREADCRUMBS[page]), 'jsonld-breadcrumb');
+  if (page === 'services') {
+    const services = serviceSchema();
+    const faq = faqSchema();
+    if (services) inject(services, 'jsonld-services');
+    if (faq) inject(faq, 'jsonld-faq');
+  }
+  if (page === 'news-detail') inject(ARTICLE_SCHEMA, 'jsonld-article');
 }
