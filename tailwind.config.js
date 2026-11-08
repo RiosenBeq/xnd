@@ -1,101 +1,102 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
+/**
+ * XND Teknoloji Grubu — Tailwind config
+ * Token system follows shadcn/ui conventions (HSL CSS variables in style.css),
+ * so every surface is driven by semantic tokens instead of ad-hoc hex values.
+ */
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./*.html",
-    "./js/**/*.js"
-  ],
-  darkMode: "class",
+  content: ['./*.html', './partials/**/*.html', './js/**/*.js'],
   theme: {
+    container: {
+      center: true,
+      padding: { DEFAULT: '1rem', sm: '1.5rem', lg: '2rem' },
+      screens: { '2xl': '1280px' },
+    },
     extend: {
       colors: {
-        // ── Core Brand Colors ─────────────────────────────────────
-        // Deep navy base
-        "surface":                  "#080c14",
-        "surface-dim":              "#060a11",
-        "surface-bright":           "#111827",
-        "surface-container-lowest": "#050912",
-        "surface-container-low":    "#0d1525",
-        "surface-container":        "#111a2e",
-        "surface-container-high":   "#172034",
-        "surface-container-highest":"#1e2a42",
-        "surface-variant":          "#1c2438",
-
-        // On-surface
-        "on-surface":         "#e8e6f0",
-        "on-surface-variant": "#9aa4be",
-        "on-background":      "#e8e6f0",
-        "background":         "#080c14",
-
-        // ── Gold / Amber Primary  ────────────────────────────────
-        "primary":              "#c9a84c",
-        "primary-dim":          "#b8963f",
-        "primary-container":    "#3a2c0d",
-        "on-primary":           "#080c14",
-        "on-primary-container": "#f0d98a",
-        "primary-fixed":        "#f5e7b2",
-        "primary-fixed-dim":    "#e8d08a",
-        "inverse-primary":      "#7a5e1a",
-        "surface-tint":         "#c9a84c",
-        "on-primary-fixed":     "#2a1e00",
-        "on-primary-fixed-variant": "#5a3f0e",
-
-        // ── Blue Accent / Secondary ─────────────────────────────
-        "secondary":              "#8fa8f5",
-        "secondary-container":    "#1c2e5e",
-        "on-secondary":           "#080c14",
-        "on-secondary-container": "#c4d0f7",
-        "secondary-fixed":        "#d6dfff",
-        "secondary-fixed-dim":    "#a5b5f0",
-        "on-secondary-fixed":     "#0a1030",
-        "on-secondary-fixed-variant": "#2a3c78",
-
-        // ── Tertiary / Teal accent ──────────────────────────────
-        "tertiary":              "#6bd4c8",
-        "tertiary-container":    "#0d3530",
-        "on-tertiary":           "#020f0e",
-        "on-tertiary-container": "#a8ede7",
-        "tertiary-fixed":        "#b8f0ea",
-        "tertiary-fixed-dim":    "#6bd4c8",
-        "on-tertiary-fixed":     "#001e1b",
-        "on-tertiary-fixed-variant": "#1a4f49",
-
-        // ── Outline / Border ────────────────────────────────────
-        "outline":         "#2e3d5a",
-        "outline-variant": "#1e2f4a",
-
-        // ── Inverse ─────────────────────────────────────────────
-        "inverse-surface":    "#e8e6f0",
-        "inverse-on-surface": "#1a202e",
-
-        // ── Error ───────────────────────────────────────────────
-        "error":             "#f28b82",
-        "error-container":   "#4a0a0a",
-        "on-error":          "#2a0000",
-        "on-error-container":"#ffd6d6",
+        border: 'hsl(var(--border) / <alpha-value>)',
+        input: 'hsl(var(--input) / <alpha-value>)',
+        ring: 'hsl(var(--ring) / <alpha-value>)',
+        background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        primary: {
+          DEFAULT: 'hsl(var(--primary) / <alpha-value>)',
+          foreground: 'hsl(var(--primary-foreground) / <alpha-value>)',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
+          foreground: 'hsl(var(--secondary-foreground) / <alpha-value>)',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted) / <alpha-value>)',
+          foreground: 'hsl(var(--muted-foreground) / <alpha-value>)',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent) / <alpha-value>)',
+          foreground: 'hsl(var(--accent-foreground) / <alpha-value>)',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive) / <alpha-value>)',
+          foreground: 'hsl(var(--destructive-foreground) / <alpha-value>)',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover) / <alpha-value>)',
+          foreground: 'hsl(var(--popover-foreground) / <alpha-value>)',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card) / <alpha-value>)',
+          foreground: 'hsl(var(--card-foreground) / <alpha-value>)',
+        },
+        // Dark corporate surface used for hero, CTA and footer bands
+        navy: {
+          DEFAULT: 'hsl(var(--navy) / <alpha-value>)',
+          foreground: 'hsl(var(--navy-foreground) / <alpha-value>)',
+          muted: 'hsl(var(--navy-muted) / <alpha-value>)',
+          card: 'hsl(var(--navy-card) / <alpha-value>)',
+          border: 'hsl(var(--navy-border) / <alpha-value>)',
+        },
+        highlight: 'hsl(var(--highlight) / <alpha-value>)',
       },
-
-      fontFamily: {
-        "headline":      ["Plus Jakarta Sans", "sans-serif"],
-        "body":          ["Plus Jakarta Sans", "sans-serif"],
-        "label":         ["Plus Jakarta Sans", "sans-serif"],
-        "plus-jakarta":  ["Plus Jakarta Sans", "sans-serif"],
-      },
-
       borderRadius: {
-        "DEFAULT": "0.5rem",
-        "lg":      "1rem",
-        "xl":      "1.5rem",
-        "2xl":     "2rem",
-        "3xl":     "2.5rem",
-        "full":    "9999px",
+        xl: 'calc(var(--radius) + 4px)',
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
-
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['"Plus Jakarta Sans"', 'Inter', ...defaultTheme.fontFamily.sans],
+      },
+      maxWidth: {
+        prose: '68ch',
+      },
+      keyframes: {
+        'fade-up': {
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'sheet-in': {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+        'fade-in': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        'pop-in': {
+          from: { opacity: '0', transform: 'translateY(-4px) scale(0.98)' },
+          to: { opacity: '1', transform: 'translateY(0) scale(1)' },
+        },
+      },
       animation: {
-        "scroll":   "scroll 45s linear infinite",
-        "float":    "floatY 6s ease-in-out infinite",
-        "gold":     "goldShimmer 4s linear infinite",
+        'fade-up': 'fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
+        'sheet-in': 'sheet-in 0.28s cubic-bezier(0.32, 0.72, 0, 1)',
+        'fade-in': 'fade-in 0.2s ease-out',
+        'pop-in': 'pop-in 0.16s ease-out',
       },
     },
   },
   plugins: [],
-}
+};

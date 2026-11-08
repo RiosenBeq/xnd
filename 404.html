@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c162c" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <title data-i18n="meta.title">Sayfa bulunamadı | XND Teknoloji Grubu</title>
+  <meta name="description" data-i18n="meta.desc" data-i18n-attr="content" content="Aradığınız sayfa bulunamadı. XND Teknoloji Grubu anasayfasına ve ana bölümlere buradan ulaşabilirsiniz." />
+  <meta name="robots" content="noindex" />
+<!-- @include head -->
+</head>
+<body data-page="notfound">
+<!-- @include header -->
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="bg-grid-navy mask-fade-b absolute inset-0 -z-10" aria-hidden="true"></div>
+      <div class="absolute -right-32 -top-40 -z-10 size-[30rem] rounded-full bg-primary/30 blur-3xl" aria-hidden="true"></div>
+      <div class="container py-20 md:py-28">
+        <p class="font-display text-7xl font-extrabold leading-none tracking-tight text-white/15 md:text-8xl" aria-hidden="true">404</p>
+        <h1 id="page-title" class="mt-6 max-w-3xl font-display text-4xl font-extrabold leading-[1.1] text-white md:text-5xl" data-i18n="notfound.title">Aradığınız sayfa bulunamadı.</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-navy-muted" data-i18n="notfound.lead">Sayfa taşınmış ya da kaldırılmış olabilir. Aşağıdaki bağlantılardan devam edebilirsiniz.</p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href="/" class="btn btn-inverse btn-lg">
+            <i data-lucide="arrow-left"></i>
+            <span data-i18n="notfound.home">Anasayfaya dön</span>
+          </a>
+          <a href="/iletisim" class="btn btn-outline-inverse btn-lg" data-i18n="nav.contact">İletişim</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="links-title">
+      <div class="container">
+        <h2 id="links-title" class="eyebrow" data-i18n="notfound.links">Sık ziyaret edilen sayfalar</h2>
+        <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <a href="/hizmetler" class="card card-interactive group flex h-full flex-col p-6">
+              <span class="icon-tile"><i data-lucide="layers"></i></span>
+              <h3 class="card-title mt-5" data-i18n="nav.services">Hizmetler</h3>
+              <p class="card-description mt-2 flex-1" data-i18n="notfound.services">Ses, ışık, görüntü, bilişim ve network çözümlerimiz.</p>
+              <i data-lucide="arrow-right" class="mt-5 size-4 text-primary transition-transform group-hover:translate-x-0.5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/marka-detay" class="card card-interactive group flex h-full flex-col p-6">
+              <span class="icon-tile"><i data-lucide="boxes"></i></span>
+              <h3 class="card-title mt-5" data-i18n="nav.brands">Markalarımız</h3>
+              <p class="card-description mt-2 flex-1" data-i18n="notfound.brands">Grup şirketlerimiz ve markalarımız.</p>
+              <i data-lucide="arrow-right" class="mt-5 size-4 text-primary transition-transform group-hover:translate-x-0.5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/hakkimizda" class="card card-interactive group flex h-full flex-col p-6">
+              <span class="icon-tile"><i data-lucide="building-2"></i></span>
+              <h3 class="card-title mt-5" data-i18n="nav.about">Hakkımızda</h3>
+              <p class="card-description mt-2 flex-1" data-i18n="notfound.about">Yaklaşımımız, misyonumuz ve vizyonumuz.</p>
+              <i data-lucide="arrow-right" class="mt-5 size-4 text-primary transition-transform group-hover:translate-x-0.5"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/basin-odasi" class="card card-interactive group flex h-full flex-col p-6">
+              <span class="icon-tile"><i data-lucide="newspaper"></i></span>
+              <h3 class="card-title mt-5" data-i18n="nav.news">Basın Odası</h3>
+              <p class="card-description mt-2 flex-1" data-i18n="notfound.news">Gruptan güncel haberler ve duyurular.</p>
+              <i data-lucide="arrow-right" class="mt-5 size-4 text-primary transition-transform group-hover:translate-x-0.5"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+<!-- @include footer -->
+<!-- @include cookie -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+  <!-- Shared head (partials/head.html) -->
+  <link rel="icon" type="image/png" href="/brand/xnd-icon.png" />
+  <link rel="apple-touch-icon" href="/brand/xnd-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var p = new URLSearchParams(location.search).get('lang');
+        var l = p || localStorage.getItem('xnd_lang');
+        if (l === 'en') {
+          d.classList.add('i18n-pending');
+          setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200);
+        }
+      } catch (e) {}
+    })();
+  </script>

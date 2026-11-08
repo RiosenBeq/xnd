@@ -1,311 +1,175 @@
 <!DOCTYPE html>
-<html class="dark" lang="tr">
+<html lang="tr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#080c14" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c162c" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- Primary SEO -->
-  <title data-i18n="page.title.career">Kariyer | Açık Pozisyonlar | XND Teknoloji Grubu</title>
-  <meta name="description" data-i18n="page.meta_desc.career" data-i18n-attr="content" content="XND Teknoloji Grubu kariyer sayfası. Açık pozisyonlar, çalışan değerleri ve iş başvurusu. Geleceği birlikte inşa edelim." />
+  <title data-i18n="meta.title">Kariyer | Açık Pozisyonlar | XND Teknoloji Grubu</title>
+  <meta name="description" data-i18n="meta.desc" data-i18n-attr="content" content="XND Teknoloji Grubu kariyer sayfası. Açık pozisyonlar, çalışan değerleri ve iş başvurusu. Geleceği birlikte inşa edelim." />
   <meta name="author" content="XND Teknoloji Grubu" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <link rel="canonical" href="https://xnd.com.tr/kariyer.html" />
+  <link rel="canonical" href="https://xnd.com.tr/kariyer" />
+  <link rel="alternate" hreflang="tr-TR" href="https://xnd.com.tr/kariyer" />
+  <link rel="alternate" hreflang="en" href="https://xnd.com.tr/kariyer?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://xnd.com.tr/kariyer" />
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="tr-TR" href="https://xnd.com.tr/kariyer.html" />
-  <link rel="alternate" hreflang="en" href="https://xnd.com.tr/kariyer.html?lang=en" />
-  <link rel="alternate" hreflang="x-default" href="https://xnd.com.tr/kariyer.html" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="XND Teknoloji Grubu" />
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:title" content="Kariyer | Açık Pozisyonlar | XND Teknoloji Grubu" />
   <meta property="og:description" content="XND Teknoloji Grubu kariyer sayfası. Açık pozisyonlar, çalışan değerleri ve iş başvurusu. Geleceği birlikte inşa edelim." />
-  <meta property="og:url" content="https://xnd.com.tr/kariyer.html" />
+  <meta property="og:url" content="https://xnd.com.tr/kariyer" />
   <meta property="og:image" content="https://xnd.com.tr/hero_bg.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="XND Teknoloji Grubu" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Kariyer | Açık Pozisyonlar | XND Teknoloji Grubu" />
   <meta name="twitter:description" content="XND Teknoloji Grubu kariyer sayfası. Açık pozisyonlar, çalışan değerleri ve iş başvurusu. Geleceği birlikte inşa edelim." />
   <meta name="twitter:image" content="https://xnd.com.tr/hero_bg.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/favicon.png" />
-
-  <!-- Preconnect / Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="/header_logo.png" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+<!-- @include head -->
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary/30 relative">
-  <div class="fixed inset-0 noise-bg"></div>
+<body data-page="career">
+<!-- @include header -->
 
-  <!-- Ambient gold glow -->
-  <div class="fixed top-[-20%] left-1/2 -translate-x-1/2 w-[1100px] h-[1100px] rounded-full bg-primary/5 blur-[160px] pointer-events-none"></div>
-
-  <div id="navbar"></div>
-
-  <main class="relative z-10 max-w-6xl mx-auto px-6 md:px-12 lg:px-16 pt-36 md:pt-44 pb-24 md:pb-32">
-
-    <!-- ═══ Hero ═══ -->
-    <section class="mb-20 md:mb-28">
-      <div class="flex items-center gap-4 mb-8">
-        <span class="w-12 h-px bg-gradient-to-r from-transparent to-primary"></span>
-        <span class="section-label">XND • Technology Group</span>
-      </div>
-      <h1 data-i18n="page.brand" class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 leading-[1.05]">XND Teknoloji Grubu</h1>
-      <p data-i18n="page.tagline" class="text-2xl md:text-3xl font-bold text-gradient max-w-3xl">Tüm teknolojiler, tek bir sistem.</p>
-      <div class="premium-divider mt-10 max-w-md"></div>
-    </section>
-
-    <!-- ═══ Section 1 ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">01</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s1.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Entegre Teknolojinin Yeni Standardı</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant">
-        <p data-i18n="page.s1.p1">Teknoloji artık tek başına bir değer değil.</p>
-        <p data-i18n="page.s1.p2">Gerçek değer, farklı sistemlerin kusursuz bir bütün olarak çalıştığı noktada ortaya çıkar.</p>
-        <p data-i18n="page.s1.p3" class="text-on-surface font-semibold">XND Teknoloji Grubu, bu bütünlüğü kurmak için vardır.</p>
-        <p data-i18n="page.s1.p4">Ses, ışık, görüntü, bilişim altyapıları, network mimarileri ve cihazlar arası haberleşme sistemleri…</p>
-        <p data-i18n="page.s1.p5">Hepsi tek başına anlamlıdır.</p>
-        <p data-i18n="page.s1.p6">Ancak birlikte çalıştıklarında gerçek bir deneyime dönüşürler.</p>
-        <p data-i18n="page.s1.p7" class="text-primary font-bold">XND, bu dönüşümü tasarlar.</p>
+  <main id="main">
+    <!-- ═══ Page hero ═══ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="bg-grid-navy mask-fade-b absolute inset-0 -z-10" aria-hidden="true"></div>
+      <div class="absolute -right-32 -top-40 -z-10 size-[30rem] rounded-full bg-primary/30 blur-3xl" aria-hidden="true"></div>
+      <div class="container py-14 md:py-20">
+        <nav aria-label="Sayfa yolu" data-i18n="nav.breadcrumb" data-i18n-attr="aria-label">
+          <ol class="breadcrumb">
+            <li><a href="/" data-i18n="nav.home">Anasayfa</a></li>
+            <li aria-hidden="true"><i data-lucide="chevron-right"></i></li>
+            <li><span aria-current="page" data-i18n="nav.career">Kariyer</span></li>
+          </ol>
+        </nav>
+        <h1 id="page-title" class="mt-6 max-w-3xl font-display text-4xl font-extrabold leading-[1.1] text-white md:text-5xl" data-i18n="career.hero.title">Geleceği birlikte inşa edelim.</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-navy-muted" data-i18n="career.hero.lead">Aramıza katılın ve dijital dünyanın önde gelen teknoloji girişimlerine güç veren mühendislik kadromuzun bir parçası olun.</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#pozisyonlar" class="btn btn-inverse btn-lg">
+            <span data-i18n="career.hero.cta">Açık pozisyonlar</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ═══ Section 2 ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">02</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s2.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Teknolojiye Bakış</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant">
-        <p data-i18n="page.s2.p1">XND için teknoloji;</p>
-        <p data-i18n="page.s2.p2">ürünlerden, markalardan veya bağımsız sistemlerden ibaret değildir.</p>
-        <p data-i18n="page.s2.p3" class="text-on-surface font-semibold">Teknoloji;</p>
-        <p data-i18n="page.s2.p4">birbirine bağlı, sürekli iletişim halinde olan ve kesintisiz çalışan bir ekosistemdir.</p>
-        <p data-i18n="page.s2.p5">Bu nedenle XND, hiçbir projeye parça parça yaklaşmaz.</p>
-        <p data-i18n="page.s2.p6">Her zaman uçtan uca düşünür, tek bir sistem olarak kurgular ve hayata geçirir.</p>
-      </div>
-    </section>
-
-    <!-- ═══ Section 3 ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">03</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s3.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Ne Yapar?</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant">
-        <p data-i18n="page.s3.p1" class="text-on-surface font-semibold">XND Teknoloji Grubu;</p>
-        <p data-i18n="page.s3.p2">Ses, ışık, görüntü ve bilişim altyapıları dahil olmak üzere tüm teknoloji katmanlarını kapsar, entegre eder ve yönetir.</p>
-        <p data-i18n="page.s3.p3" class="pt-2">Bu kapsamda;</p>
-        <ul class="space-y-3 mt-4 mb-2">
-          <li class="flex gap-4 items-start group">
-            <span class="mt-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(201,168,76,0.6)] flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-            <span data-i18n="page.s3.li1" class="text-on-surface">Profesyonel ses, ışık ve görüntü sistemleri</span>
+    <!-- ═══ Why XND ═══ -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="max-w-2xl" data-reveal>
+          <p class="eyebrow" data-i18n="career.why.eyebrow">Neden XND</p>
+          <h2 id="why-title" class="section-title mt-4" data-i18n="career.why.title">Teknolojinin her katmanında çalışın</h2>
+          <p class="section-lead" data-i18n="career.why.lead">Ses, ışık, görüntü, bilişim ve network altyapılarını tek bir sistem olarak kuran bir grubun parçası olun.</p>
+        </div>
+        <ul class="mt-12 grid gap-5 md:grid-cols-3">
+          <li class="card flex h-full flex-col p-6" data-reveal>
+            <span class="icon-tile"><i data-lucide="building-2"></i></span>
+            <p class="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground" data-i18n="career.why.1.label">Çalışma modeli</p>
+            <h3 class="card-title mt-1.5" data-i18n="career.why.1.title">Hibrit çalışma</h3>
+            <p class="card-description mt-2" data-i18n="career.why.1.desc">Ofis ve uzaktan çalışmayı birlikte kullanan esnek bir çalışma düzeni.</p>
           </li>
-          <li class="flex gap-4 items-start group">
-            <span class="mt-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(201,168,76,0.6)] flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-            <span data-i18n="page.s3.li2" class="text-on-surface">Bilişim altyapıları ve IT çözümleri</span>
+          <li class="card flex h-full flex-col p-6" data-reveal style="--reveal-delay: 60ms">
+            <span class="icon-tile"><i data-lucide="cpu"></i></span>
+            <p class="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground" data-i18n="career.why.2.label">Teknoloji odaklılık</p>
+            <h3 class="card-title mt-1.5" data-i18n="career.why.2.title">Uçtan uca projeler</h3>
+            <p class="card-description mt-2" data-i18n="career.why.2.desc">Analizden sürekliliğe uzanan, farklı teknolojileri bir araya getiren projelerde yer alın.</p>
           </li>
-          <li class="flex gap-4 items-start group">
-            <span class="mt-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(201,168,76,0.6)] flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-            <span data-i18n="page.s3.li3" class="text-on-surface">Network ve veri iletişim mimarileri</span>
-          </li>
-          <li class="flex gap-4 items-start group">
-            <span class="mt-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(201,168,76,0.6)] flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-            <span data-i18n="page.s3.li4" class="text-on-surface">Cihazlar arası haberleşme ve entegrasyon sistemleri</span>
-          </li>
-          <li class="flex gap-4 items-start group">
-            <span class="mt-2.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(201,168,76,0.6)] flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-            <span data-i18n="page.s3.li5" class="text-on-surface">Otomasyon ve kontrol altyapıları</span>
+          <li class="card flex h-full flex-col p-6" data-reveal style="--reveal-delay: 120ms">
+            <span class="icon-tile"><i data-lucide="graduation-cap"></i></span>
+            <p class="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground" data-i18n="career.why.3.label">Eğitim desteği</p>
+            <h3 class="card-title mt-1.5" data-i18n="career.why.3.title">Sürekli gelişim</h3>
+            <p class="card-description mt-2" data-i18n="career.why.3.desc">Mesleki gelişiminizi destekleyen, öğrenmeye açık bir çalışma ortamı.</p>
           </li>
         </ul>
-        <p data-i18n="page.s3.p4">Amaç yalnızca kurulum yapmak değil;</p>
-        <p data-i18n="page.s3.p5" class="text-on-surface font-semibold">uzun vadede stabil, sürdürülebilir ve yüksek performanslı çalışan sistemler oluşturmaktır.</p>
       </div>
     </section>
 
-    <!-- ═══ Section 4 — Methodology ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">04</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s4.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Nasıl Yapar?</h2>
-      <div class="space-y-3 text-base md:text-lg leading-relaxed text-on-surface-variant mb-10">
-        <p data-i18n="page.s4.intro1">XND'nin metodolojisi, sadelik üzerine kuruludur.</p>
-        <p data-i18n="page.s4.intro2">Ama bu sadelik, yüksek seviyede bir mühendislik yaklaşımının sonucudur.</p>
-      </div>
-
-      <div class="space-y-6">
-        <!-- Step 1 -->
-        <div class="relative pl-6 md:pl-10 border-l-2 border-primary/30 hover:border-primary transition-colors duration-500">
-          <span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary text-[10px] font-black">1</span>
-          <h3 data-i18n="page.s4.sub1.h" class="text-xl md:text-2xl font-extrabold mb-3 text-on-surface">1. Anlar</h3>
-          <div class="space-y-2 text-sm md:text-base text-on-surface-variant leading-relaxed">
-            <p data-i18n="page.s4.sub1.p1">Her proje, derin bir analiz ile başlar.</p>
-            <p data-i18n="page.s4.sub1.p2">Mekânın yapısı, kullanıcı davranışı, operasyonel ihtiyaçlar ve veri akışı değerlendirilir.</p>
-            <p data-i18n="page.s4.sub1.p3" class="text-primary/90 italic">Çünkü doğru sistem, doğru sorularla başlar.</p>
-          </div>
+    <!-- ═══ Open positions ═══ -->
+    <section id="pozisyonlar" class="section scroll-mt-4 border-y bg-muted" aria-labelledby="jobs-title">
+      <div class="container grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
+        <div data-reveal>
+          <p class="eyebrow" data-i18n="career.jobs.eyebrow">Kariyer fırsatları</p>
+          <h2 id="jobs-title" class="section-title mt-4" data-i18n="career.jobs.title">Açık pozisyonlar</h2>
+          <p class="section-lead" data-i18n="career.jobs.lead">Başvurunuzu, ilgili pozisyonu konu satırında belirterek e-posta ile iletebilirsiniz.</p>
         </div>
 
-        <!-- Step 2 -->
-        <div class="relative pl-6 md:pl-10 border-l-2 border-primary/30 hover:border-primary transition-colors duration-500">
-          <span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary text-[10px] font-black">2</span>
-          <h3 data-i18n="page.s4.sub2.h" class="text-xl md:text-2xl font-extrabold mb-3 text-on-surface">2. Tasarlar</h3>
-          <div class="space-y-2 text-sm md:text-base text-on-surface-variant leading-relaxed">
-            <p data-i18n="page.s4.sub2.p1">Tüm sistemler, tek tek değil;</p>
-            <p data-i18n="page.s4.sub2.p2">uçtan uca bir mimari olarak kurgulanır.</p>
-            <p data-i18n="page.s4.sub2.p3">Network altyapısından ses sistemine,</p>
-            <p data-i18n="page.s4.sub2.p4">görüntü çözümlerinden kontrol sistemlerine kadar</p>
-            <p data-i18n="page.s4.sub2.p5">her bileşen birbiriyle uyumlu olacak şekilde planlanır.</p>
-          </div>
-        </div>
+        <div class="space-y-4">
+          <ul class="space-y-4">
+            <li class="card flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between" data-reveal>
+              <div class="flex gap-4">
+                <span class="icon-tile"><i data-lucide="monitor"></i></span>
+                <div>
+                  <h3 class="font-display text-lg font-semibold">Senior Frontend Engineer</h3>
+                  <div class="mt-2.5 flex flex-wrap gap-2">
+                    <span class="badge badge-outline">React / Vue</span>
+                    <span class="badge badge-accent" data-i18n="career.mode.remotehybrid">Uzaktan / Hibrit</span>
+                  </div>
+                </div>
+              </div>
+              <a href="mailto:hr@xndtechnology.com?subject=Ba%C5%9Fvuru%3A%20Senior%20Frontend%20Engineer" class="btn btn-primary shrink-0">
+                <span data-i18n="career.apply">Başvur</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </li>
+            <li class="card flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between" data-reveal style="--reveal-delay: 60ms">
+              <div class="flex gap-4">
+                <span class="icon-tile"><i data-lucide="database"></i></span>
+                <div>
+                  <h3 class="font-display text-lg font-semibold">Backend Developer</h3>
+                  <div class="mt-2.5 flex flex-wrap gap-2">
+                    <span class="badge badge-outline">Node.js / PostgreSQL</span>
+                    <span class="badge badge-accent" data-i18n="career.mode.remote">Uzaktan</span>
+                  </div>
+                </div>
+              </div>
+              <a href="mailto:hr@xndtechnology.com?subject=Ba%C5%9Fvuru%3A%20Backend%20Developer" class="btn btn-primary shrink-0">
+                <span data-i18n="career.apply">Başvur</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </li>
+            <li class="card flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between" data-reveal style="--reveal-delay: 120ms">
+              <div class="flex gap-4">
+                <span class="icon-tile"><i data-lucide="server"></i></span>
+                <div>
+                  <h3 class="font-display text-lg font-semibold">DevOps Engineer</h3>
+                  <div class="mt-2.5 flex flex-wrap gap-2">
+                    <span class="badge badge-outline">AWS / Kubernetes</span>
+                    <span class="badge badge-accent" data-i18n="career.mode.hybrid">Hibrit</span>
+                  </div>
+                </div>
+              </div>
+              <a href="mailto:hr@xndtechnology.com?subject=Ba%C5%9Fvuru%3A%20DevOps%20Engineer" class="btn btn-primary shrink-0">
+                <span data-i18n="career.apply">Başvur</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </li>
+          </ul>
 
-        <!-- Step 3 -->
-        <div class="relative pl-6 md:pl-10 border-l-2 border-primary/30 hover:border-primary transition-colors duration-500">
-          <span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary text-[10px] font-black">3</span>
-          <h3 data-i18n="page.s4.sub3.h" class="text-xl md:text-2xl font-extrabold mb-3 text-on-surface">3. Entegre Eder</h3>
-          <div class="space-y-2 text-sm md:text-base text-on-surface-variant leading-relaxed">
-            <p data-i18n="page.s4.sub3.p1">Farklı teknolojiler, tek bir dilde buluşturulur.</p>
-            <p data-i18n="page.s4.sub3.p2">Ses, ışık, görüntü, IT ve network altyapıları</p>
-            <p data-i18n="page.s4.sub3.p3">birbirine bağlı ve senkronize çalışan bir sistem haline gelir.</p>
-            <p data-i18n="page.s4.sub3.p4">Cihazlar konuşur.</p>
-            <p data-i18n="page.s4.sub3.p5">Sistemler birlikte çalışır.</p>
-            <p data-i18n="page.s4.sub3.p6" class="text-primary/90 italic">Kullanıcı ise sadece sonucu deneyimler.</p>
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="relative pl-6 md:pl-10 border-l-2 border-primary/30 hover:border-primary transition-colors duration-500">
-          <span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary text-[10px] font-black">4</span>
-          <h3 data-i18n="page.s4.sub4.h" class="text-xl md:text-2xl font-extrabold mb-3 text-on-surface">4. Hayata Geçirir</h3>
-          <div class="space-y-2 text-sm md:text-base text-on-surface-variant leading-relaxed">
-            <p data-i18n="page.s4.sub4.p1">Kurulum, XND için sadece başlangıçtır.</p>
-            <p data-i18n="page.s4.sub4.p2">Tüm sistemler test edilir, optimize edilir</p>
-            <p data-i18n="page.s4.sub4.p3">ve maksimum performansla devreye alınır.</p>
-            <p data-i18n="page.s4.sub4.p4">Her detay, uzun vadeli stabilite için yapılandırılır.</p>
-          </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="relative pl-6 md:pl-10 border-l-2 border-primary/30 hover:border-primary transition-colors duration-500">
-          <span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary text-[10px] font-black">5</span>
-          <h3 data-i18n="page.s4.sub5.h" class="text-xl md:text-2xl font-extrabold mb-3 text-on-surface">5. Sürekliliği Sağlar</h3>
-          <div class="space-y-2 text-sm md:text-base text-on-surface-variant leading-relaxed">
-            <p data-i18n="page.s4.sub5.p1">Gerçek kalite, kurulumdan sonra ortaya çıkar.</p>
-            <p data-i18n="page.s4.sub5.p2">XND, sistemlerin</p>
-            <p data-i18n="page.s4.sub5.p3">kesintisiz, stabil ve sürdürülebilir şekilde çalışmasını garanti altına alır.</p>
-            <p data-i18n="page.s4.sub5.p4">Çünkü iyi bir sistem, sadece çalışmaz;</p>
-            <p data-i18n="page.s4.sub5.p5" class="text-primary/90 italic">her zaman aynı performansla çalışır.</p>
+          <div class="card flex flex-col gap-5 border-dashed bg-background/60 p-6 shadow-none sm:flex-row sm:items-center sm:justify-between" data-reveal>
+            <div class="flex gap-4">
+              <span class="icon-tile"><i data-lucide="send"></i></span>
+              <div>
+                <h3 class="font-display text-lg font-semibold" data-i18n="career.general.title">Aradığınız pozisyonu göremediniz mi?</h3>
+                <p class="mt-1.5 text-[15px] leading-relaxed text-muted-foreground" data-i18n="career.general.desc">Özgeçmişinizi genel başvuru olarak hr@xndtechnology.com adresine iletebilirsiniz.</p>
+              </div>
+            </div>
+            <a href="mailto:hr@xndtechnology.com?subject=Genel%20Ba%C5%9Fvuru" class="btn btn-outline shrink-0">
+              <i data-lucide="mail"></i>
+              <span data-i18n="career.general.cta">Genel başvuru</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- ═══ Section 5 — Approach (3-pillar grid) ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">05</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s5.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Yaklaşım</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant mb-8">
-        <p data-i18n="page.s5.p1">XND Teknoloji Grubu, teknolojiyi karmaşıklaştırmaz.</p>
-        <p data-i18n="page.s5.p2" class="text-on-surface font-semibold">Onu anlaşılır, yönetilebilir ve kusursuz hale getirir.</p>
-        <p data-i18n="page.s5.p3" class="pt-2">Her projede hedef:</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-        <div class="relative rounded-2xl border border-primary/20 bg-primary/[0.04] p-6 md:p-8 hover:bg-primary/[0.08] transition-colors duration-500">
-          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">scatter_plot</span>
-          <p data-i18n="page.s5.li1" class="text-base md:text-lg font-bold text-on-surface">Minimum karmaşıklık</p>
-        </div>
-        <div class="relative rounded-2xl border border-primary/20 bg-primary/[0.04] p-6 md:p-8 hover:bg-primary/[0.08] transition-colors duration-500">
-          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">trending_up</span>
-          <p data-i18n="page.s5.li2" class="text-base md:text-lg font-bold text-on-surface">Maksimum verim</p>
-        </div>
-        <div class="relative rounded-2xl border border-primary/20 bg-primary/[0.04] p-6 md:p-8 hover:bg-primary/[0.08] transition-colors duration-500">
-          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">verified</span>
-          <p data-i18n="page.s5.li3" class="text-base md:text-lg font-bold text-on-surface">Uzun vadeli stabilite</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ Section 6 ═══ -->
-    <section class="glass-card specular-highlight rounded-3xl p-8 md:p-14 mb-8 md:mb-10 transition-all duration-700 hover:border-primary/20">
-      <div class="flex items-center gap-4 mb-6">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">06</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s6.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight">Deneyim Odaklı Sistemler</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant">
-        <p data-i18n="page.s6.p1" class="text-on-surface font-semibold">İyi bir teknoloji görünmezdir.</p>
-        <p data-i18n="page.s6.p2">Ama etkisi her yerde hissedilir.</p>
-        <p data-i18n="page.s6.p3">Bir mekâna girildiğinde;</p>
-        <p data-i18n="page.s6.p4" class="italic text-on-surface/80">sesin dengesi, ışığın atmosferi, ekranların akışı…</p>
-        <p data-i18n="page.s6.p5">Hiçbiri dikkat çekmez.</p>
-        <p data-i18n="page.s6.p6">Çünkü hepsi doğru çalışır.</p>
-        <p data-i18n="page.s6.p7" class="text-primary font-bold pt-2">İşte bu, XND'nin imzasıdır.</p>
-      </div>
-    </section>
-
-    <!-- ═══ Section 7 — Future Vision (closing) ═══ -->
-    <section class="relative glass-card specular-highlight rounded-3xl p-8 md:p-14 overflow-hidden transition-all duration-700 hover:border-primary/20">
-      <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-primary/10 blur-[100px] pointer-events-none"></div>
-      <div class="flex items-center gap-4 mb-6 relative">
-        <span class="text-primary text-[10px] tracking-[0.4em] font-black">07</span>
-        <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
-      </div>
-      <h2 data-i18n="page.s7.h" class="text-3xl md:text-5xl font-black mb-8 text-gradient leading-tight relative">Gelecek Vizyonu</h2>
-      <div class="space-y-4 text-base md:text-lg leading-relaxed text-on-surface-variant relative">
-        <p data-i18n="page.s7.p1">Gelecek, daha fazla teknoloji değil;</p>
-        <p data-i18n="page.s7.p2" class="text-on-surface font-semibold">daha doğru entegre edilmiş teknoloji gerektirir.</p>
-        <p data-i18n="page.s7.p3" class="pt-2">XND Teknoloji Grubu,</p>
-        <p data-i18n="page.s7.p4">farklı sistemleri bir araya getiren değil,</p>
-        <p data-i18n="page.s7.p5">onları tek bir akıllı yapı haline getiren bir yaklaşım inşa eder.</p>
-      </div>
-      <div class="premium-divider my-8 max-w-md relative"></div>
-      <div class="space-y-3 text-lg md:text-xl font-bold relative">
-        <p data-i18n="page.s7.p6" class="text-on-surface">XND Teknoloji Grubu,</p>
-        <p data-i18n="page.s7.p7" class="text-on-surface">teknolojiyi kurmaz.</p>
-        <p data-i18n="page.s7.p8" class="text-gradient">Onu bağlar, entegre eder ve kusursuz şekilde çalıştırır.</p>
-      </div>
-    </section>
-
   </main>
 
-  <div id="footer"></div>
-
-    <script type="module">
-    import { renderNavbar, renderFooter, renderCookieConsent } from './js/components.js';
-    import { initLanguage } from './js/i18n.js';
-    import { renderBaseSchema, renderBreadcrumb } from './js/seo.js';
-    renderNavbar('career');
-    renderFooter();
-    renderBaseSchema();
-    renderBreadcrumb([{ name: 'Anasayfa', url: '/' }, { name: 'Kariyer', url: '/kariyer.html' }]);
-    renderCookieConsent();
-    initLanguage();
-  </script>
+<!-- @include cta -->
+<!-- @include footer -->
+<!-- @include cookie -->
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
